@@ -1,0 +1,39 @@
+body
+{
+	margin: 0px auto;
+	width: 900px;
+}
+
+.menu_container
+{
+	margin: 20px 0px 0px 580px;
+	text-align: center;
+	width: 300px;
+}
+
+.menu
+{
+	margin-right: 10px;
+}
+
+input:last-of-type
+{
+	background-color: green;
+	border: 5px groove blue;
+	border-radius: 15px;
+	color: white;
+	margin-top: 10px;
+	padding: 0px 10px;
+}
+
+input
+{
+	margin-bottom: 10px;
+}
+
+.errors
+{
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
