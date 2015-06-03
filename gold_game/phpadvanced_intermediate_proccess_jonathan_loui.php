@@ -19,7 +19,7 @@
 
 		$_SESSION['gold'] += $_SESSION['change'];
 		$_SESSION['log'][] = $log;
-		header("Location: phpadvanced_intermediate_jonathan_loui.php");
+		header("Location: index.php");
 		exit();
 	}
 
@@ -37,7 +37,7 @@
 	else
 	{
 		session_destroy();
-		header("Location: phpadvanced_intermediate_jonathan_loui.php");
+		header("Location: index.php");
 		die();
 	}
 ?>
