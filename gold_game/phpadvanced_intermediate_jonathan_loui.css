@@ -1,0 +1,87 @@
+body {
+	margin: 10px auto;
+	width: 900px;
+}
+
+#title {
+	border-bottom: 5px groove blue;
+	border-radius: 5px;
+	margin: 20px auto;
+	width: 270px;
+}
+
+#total_gold p {
+	border: 2px solid black;
+	display: inline-block;
+	height: 20px;
+	vertical-align: middle;
+	width: 200px;
+}
+
+#total_gold form {
+	margin-left: 10px;
+}
+
+.locations {
+	background-position: center;
+	background-size: 130px 170px;
+	border: 5px outset green;
+	border-radius: 10px;
+	color: black;
+	display: inline-block;
+	height: 170px;
+	margin-left: 65px;
+	text-align: center;
+	vertical-align: top;
+	width: 130px;
+}
+
+body div:nth-of-type(2) {
+	background-image: url('farm.jpg');
+}
+
+body div:nth-of-type(3) {
+	background-image: url('cave.jpg');
+}
+
+body div:nth-of-type(4) {
+	background-image: url('house.jpg');
+}
+
+body div:nth-of-type(5) {
+	background-image: url('casino.jpg');
+}
+
+form {
+	display: inline-block;
+	margin: 20px auto;
+	vertical-align: top;
+	width: 100px;
+}
+
+.button {
+	background-color: blue;
+	border: 2px solid black;
+	border-radius: 15px;
+	cursor: pointer;
+}
+
+#activities {
+	border: 2px solid gold;
+	height: 200px;
+	margin: 10px auto;
+	overflow: auto;
+	width: 860px;
+}
+
+.log, .log2 {
+	border: none;
+	color: green;
+	height: 20px;
+	margin: 0px;
+	width: 600px;
+}
+
+.log2 {
+	color: red;
+}
