@@ -1,0 +1,42 @@
+body
+{
+	margin: 20px auto;
+	width: 510px;
+}
+
+.col1
+{
+	display: inline-block;
+	width: 100px;
+}
+
+.col2
+{
+	display: inline-block;
+	width: 400px;
+}
+
+form
+{
+	margin-top: 20px;
+}
+
+form input
+{
+	margin-left: 80px;
+}
+
+form input
+{
+	background-color: gray;
+	border: 5px inset black;
+	border-radius: 15px;
+	padding: 0px 10px;
+	text-align: center;
+}
+
+form input:last-of-type
+{
+	background-color: red;
+	color: white;
+}

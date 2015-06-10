@@ -15,10 +15,12 @@
 
 	function output_forms($value)
 	{
-		echo '<form action="phpadvanced_intermediate_proccess_jonathan_loui.php" method="post">
+		($value == "reset") ? $button="Reset" : $button="Add";
+		
+		return '<form action="phpadvanced_intermediate_proccess_jonathan_loui.php" method="post">
 			<input type="hidden" name="location" value="' . $value . '" />
-			<input type="submit" class="button" value="Reset!" />
-		</form>';
+			<input type="submit" class="button" value="' . $button . '!" />
+			</form>';
 	}
 ?>
 <!DOCTYPE html>
@@ -40,13 +42,11 @@
 		<h3>Farm</h3>
 		<h3>(earns 10-20 golds)</h3>
 		<?php output_forms('farm'); ?>
-		</form>
 	</div>
 	<div class="locations">
 		<h3>Cave</h3>
 		<h3>(earns 5-10 golds)</h3>
 		<?php output_forms('cave'); ?>
-		</form>
 	</div>
 	<div class="locations">
 		<h3>House</h3>
@@ -60,13 +60,13 @@
 	</div>
 	<p>Activities:</p>
 	<div id="activities">
-		<?php 
-			if(isset($_SESSION['log']))
-			{
-				foreach ($_SESSION['log'] as $entry)
-					echo $entry;
-			}
-		?>
+<?php 
+	if(isset($_SESSION['log']))
+	{
+		foreach($_SESSION['log'] as $entry)
+			echo $entry;
+	}
+?>
 	</div>
 </body>
 </html>

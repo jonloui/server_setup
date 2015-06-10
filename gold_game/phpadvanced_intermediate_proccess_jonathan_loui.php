@@ -7,23 +7,21 @@
 		if($location == "casino" && (rand(1,10) > 3))
 		{
 			$_SESSION['change'] = rand(-50, 0);
-			$log[] = "<p class='log2'>You entered the casino and lost " . $_SESSION['change'] . " golds...Ouch.. (" . 
+			$log = "<p class='log2'>You entered the casino and lost " . $_SESSION['change'] . " golds...Ouch.. (" . 
 				date("F jS Y h:ia") . ")</p>";
 		}
 		else
 		{
 			$_SESSION['change'] = rand($min_gold, $max_gold);
-			$log[] = "<p class='log'>You entered the " . $location . " and earned " . $_SESSION['change'] . " golds. (" . 
+			$log = "<p class='log'>You entered the " . $location . " and earned " . $_SESSION['change'] . " golds. (" . 
 					date("F jS Y h:ia") . ")</p>";
 		}
 
 		$_SESSION['gold'] += $_SESSION['change'];
 		$_SESSION['log'][] = $log;
-		header("Location: index.php");
-		exit();
 	}
 
-	if(isset($_POST['location']))
+	if(isset($_POST['location']) && $_POST['location'] != "reset")
 	{
 		if($_POST['location'] == "farm")
 			entry("farm", 10, 20);
@@ -35,9 +33,8 @@
 			entry("casino", 0, 50);
 	}
 	else
-	{
 		session_destroy();
-		header("Location: index.php");
-		die();
-	}
+
+	header("Location: index.php");
+	exit();
 ?>
