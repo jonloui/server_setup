@@ -14,8 +14,8 @@ else
 {
 	$db['default']['hostname'] = 'localhost';
 	$db['default']['username'] = 'root';
-	$db['default']['password'] = 'Mythos15root';
-	$db['default']['database'] = 'course';
+	$db['default']['password'] = '';
+	$db['default']['database'] = '';
 }
 
 $db['default']['dbdriver'] = 'mysql';
