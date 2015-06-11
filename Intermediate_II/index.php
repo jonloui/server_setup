@@ -18,7 +18,7 @@
  * NOTE: If you change these, also change the error_reporting() code below
  *
  */
-	date_default_timezone_set('UTC');
+	date_default_timezone_set('America/Los_Angeles');
 	define('ENVIRONMENT', 'development');
 /*
  *---------------------------------------------------------------
