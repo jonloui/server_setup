@@ -1,0 +1,35 @@
+#character_container
+{
+	margin: 10px auto;
+	width: 530px;
+	border: 2px solid black;
+}
+
+.chars
+{
+	display: inline-block;
+	text-align: center;
+	width: 20px;
+	/*border: 2px solid black;*/
+}
+
+.letter, .space
+{
+	display: inline-block;
+	margin-right: 5px;
+	text-align: center;
+	vertical-align: top;
+	width: 20px;
+	/*border: 2px solid black;*/
+}
+
+input
+{
+	width: 15px;
+}
+
+ul
+{
+	display: inline-block;
+	list-style-type: none;
+}
