@@ -2,7 +2,6 @@
 {
 	margin: 10px auto;
 	width: 530px;
-	border: 2px solid black;
 }
 
 .chars
@@ -10,7 +9,6 @@
 	display: inline-block;
 	text-align: center;
 	width: 20px;
-	/*border: 2px solid black;*/
 }
 
 .letter, .space

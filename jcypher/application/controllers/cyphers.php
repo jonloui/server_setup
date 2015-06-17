@@ -36,12 +36,12 @@ class Cyphers extends CI_Controller {
 		$data['tip'] = $this->input->post('hint');
 		$result = $this->cypher->add_cypher($data);
 		
-		if($result)
+		if($result == 'valid')
 			$this->session->set_flashdata('success', 'Cypher was saved to the database!');
 		else
-			$this->session->set_flashdata('error', 'Cypher was not saved to the database!');
+			$this->session->set_flashdata('error', $result);
 		
-		redirect(base_url('/'))	;
+		redirect('/cypher');
 	}
 
 	public function show($id)
@@ -51,4 +51,4 @@ class Cyphers extends CI_Controller {
 	}
 }
 
-//end of main controller
+//end of cyphers controller

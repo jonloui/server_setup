@@ -1,0 +1,103 @@
+body
+{
+	background-color: #000000; 
+	margin: 0px; 
+	padding: 0px; 
+	width: 100%;
+}
+
+#container
+{
+	margin: 0px auto; 
+	padding: 0px; 
+	width: 100%;
+}
+
+#page_content
+{
+	background-color: #B6B2B2;
+	height: 850px;
+	margin: 0px auto;
+	position: relative;
+	width: 1100px;
+}
+
+#top_container
+{
+	height: 85px;
+	margin-top: 0px;
+	padding: 0px;
+	width: 100%;
+}
+
+#title_container
+{
+	display: none;
+	height: 85px;
+	margin: 0px auto;
+	padding: 0px;  
+	width: 800px;
+}
+
+#middle_container
+{
+	height: 600px;
+	margin-top: 20px;
+	padding: 0px;
+	width: 100%;
+}
+
+.menu
+{
+	float: left;
+	height: 300px;
+	margin: 0px;
+	width: 200px;
+}
+
+/**** Create a menu manipulating one image ****/
+#navMenu {position:relative; top:0px; left:-30px; }
+#navMenu li {margin:0; padding:0; list-style:none; position:relative; }
+#navMenu li, #navMenu a {display:block; height:30px; }
+
+#menu_demo{left:0px; top:0px; width:95px; }
+#menu_demo{background:url('/assets/images/tloui/img/menu_Sprite.jpg') 0px -4px; }
+#menu_demo a:hover{background:url('/assets/images/tloui/img/menu_Sprite.jpg') -180px -4px; }
+
+#menu_animation{left:0px; top:0px; width:170px; }
+#menu_animation{background:url('/assets/images/tloui/img/menu_Sprite.jpg') 0px -39px;}
+#menu_animation a:hover{background:url('/assets/images/tloui/img/menu_Sprite.jpg') -180px -39px;}
+
+#menu_fine_art{left:0px; top:0px; width:130px; }
+#menu_fine_art{background:url('/assets/images/tloui/img/menu_Sprite.jpg') 0px -74px;}
+#menu_fine_art a:hover{background:url('/assets/images/tloui/img/menu_Sprite.jpg') -180px -74px;}
+
+#menu_resume{left:0px; top:0px; width:120px; }
+#menu_resume{background:url('/assets/images/tloui/img/menu_Sprite.jpg') 0px -107px;}
+#menu_resume a:hover{background:url('/assets/images/tloui/img/menu_Sprite.jpg') -180px -107px;}
+
+#menu_contact_info{left:0px; top:0px; width:180px; }
+#menu_contact_info{background:url('/assets/images/tloui/img/menu_Sprite.jpg') 0px -140px;}
+#menu_contact_info a:hover{background:url('/assets/images/tloui/img/menu_Sprite.jpg') -180px -140px;}
+
+/* NOT USED ANYMORE */
+#bottom_container
+{
+	height: 100px;
+	text-align: center;
+	width: 100%;
+}
+
+/* NOT USED ANYMORE */
+#jon_loui
+{
+	background-image: url('/assets/images/tloui/img/jonathan_loui_img.gif');
+	background-position: center bottom;
+	background-repeat: no-repeat;
+	background-size: 50px 50px;
+	cursor: pointer;
+	height: 50px;
+	margin: 0px auto;
+	padding: 0px;
+	width: 50px;
+}

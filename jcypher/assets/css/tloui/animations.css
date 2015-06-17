@@ -1,0 +1,124 @@
+#page_content
+{
+	height: 560px;
+}
+
+#middle_container
+{
+	height: 430px;
+}
+
+.thumbnails
+{
+	height:360px;
+	margin: 0px auto;
+	position: relative;
+	width: 330px;
+}
+
+.thumb_container
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 5px groove #FFFFFF;
+	cursor: pointer;
+	/* for IE */
+	filter: alpha(opacity=40);
+	float: left;
+	height: 100px;
+	margin: 0px;
+	/* CSS3 standard */
+	opacity: 0.4;
+	position: relative;
+	width: 100px;
+}
+
+.thumb_container:first-of-type
+{
+	background-image: url('/assets/images/tloui/Animation/Inf_Basic_Attack_Backswing_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(2)
+{
+	background-image: url('/assets/images/tloui/Animation/Inf_Basic_Attack_Jab_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(3)
+{
+	background-image: url('/assets/images/tloui/Animation/SlingshotDrill_Attack_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(4)
+{
+	background-image: url('/assets/images/tloui/Animation/Slingshot_Drill_Hit_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(5)
+{
+	background-image: url('/assets/images/tloui/Animation/Yabu_Attack_Jab_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(6)
+{
+	background-image: url('/assets/images/tloui/Animation/Yabu_Jump_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(7)
+{
+	background-image: url('/assets/images/tloui/Animation/Final_Fight_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(8)
+{
+	background-image: url('/assets/images/tloui/Animation/Khanklesaur_Stomp_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(9)
+{
+	background-image: url('/assets/images/tloui/Animation/OrcSwing_Thumb.jpg');
+}
+
+#tempImgText
+{
+	height: 50px;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#caption
+{
+	color: #0000FF;
+	display: block;
+	font-weight: bold;
+	margin: 0px auto;
+	text-align: center;
+	width: 300px;
+}
+
+#vid_container
+{
+	background-color: white;
+	display: none;
+	height: 500px;
+	right: 300px;
+	margin: 0px auto;
+	padding: 10px 0px 10px 10px;
+	position: fixed;
+	top: 50px;
+	width: 695px;
+}
+
+#vid_container iframe
+{
+	margin: 0px auto;
+	width: 670px;
+}
+
+#vid_container .x
+{
+	cursor: pointer;
+	display: inline-block;
+	font-weight: bold;
+	vertical-align: top;
+	width: 11px;
+}

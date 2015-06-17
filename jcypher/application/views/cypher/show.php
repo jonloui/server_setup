@@ -1,66 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+	<meta charset="UTF-8">
 	<title>Jon's Cyphers</title>
+	<!-- add a description -->
+	<meta name="description" content="" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
 	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/show.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/cypher/index.css" />
+	<link rel="stylesheet" type="text/css" href="/assets/css/cypher/show.css" />
+	<link rel="webpage icon" href="/assets/images/jonathan_loui_img.gif">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript">
-		$(document).ready(function() {
-
-	// 		$(document).keypress(function(event){
- //    alert(String.fromCharCode(event.which)); 
- // })
-			// $('.char_input').change(function() {
-			// 	// console.log($(this).val());
-			// 	current_class = "." + $(this).attr('class').substring(11);
-			// 	console.log(current_class);
-			// });
-			prev_char="";
-			prev_class;
-			$('.char_input').keydown(function() {
-				prev_char = $(this).val().charCodeAt(0);
-				prev_class = "." + $(this).attr('class').substring(11);
-			}).keyup(function() {
-					console.log(prev_char + " " + $(prev_class).val());
-				});
-				// $(this).change(function() {
-				// 	console.log(current_char);
-
-				// });
-			// 	current_char = $(this).val().charCodeAt(0);
-			// 	current_class = "." + $(this).attr('class').substring(11);
-				
-			// 	$(this).keyup(function() {
-			// 		// if(current_char != $(current_class).val().charCodeAt(0) && current_char >= 65 && current_char <= 90)
-			// 		// 	$('#character' + current_char.toString()).hide();
-
-			// 		console.log($(current_class).val());
-			// 		$('.' + $(this).attr('class').substring(11)).val($(this).val().toUpperCase());
-			// 		// //$(this).parent().next().children("input").focus();
-
-			// 		// // $('.character' + $(this).attr('class').substring(11)).text() = "";
-			// 		// ascii_value = $(this).val().toUpperCase().charCodeAt(0);
-
-			// 		// if(ascii_value >= 65 && ascii_value <= 90)
-			// 		// {
-			// 		// 	$('#character' + ascii_value.toString()).hide();
-			// 		// 	// console.log('#character' + ascii_value.toString());
-			// 		// }
-			// 		// else if(current_char >= 65 && current_char <= 90)
-			// 		// {
-			// 		// 	$('#character' + current_char.toString()).show();
-			// 		// }
-
-				
-			// });
-		});
-	</script>
+	<script type="text/javascript" src="/assets/javascript/cypher/show.js"></script>
 </head>
 
 <body>
-	<a href="/cyphers">Main page</a>
+	<?php $this->load->view('partials/header'); ?>
+
 	<h1 id="title">Jon's Cypher: <?php echo $cypher['id']; ?></h1>
 
 	<div id="hint">
@@ -89,7 +45,6 @@
 				 		  </p>";
 				}
 				else
-					// echo "<p class='space'><ul><li>" . $character . "</li><li>" . $character . "</li></ul></p>";
 					echo "<p class='space'>" . $character . "</p>";
 			}
 

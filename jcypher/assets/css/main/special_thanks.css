@@ -1,0 +1,65 @@
+#title
+{
+	width: 250px;
+}
+
+#thank_you_message
+{
+	border: 5px groove silver;
+	border-radius: 15px;
+	color: blue;
+	font-weight: bold;
+	margin: 20px auto;
+	padding: 10px;
+	width: 500px;
+}
+
+#thank_you_link_container
+{
+	border: 5px groove silver;
+	border-radius: 15px;
+	margin: 0px auto;
+	padding: 10px;
+	width: 500px;
+}
+
+#thank_you_link_container a img
+{
+	margin: 10px;
+}
+
+#thank_you_link_container a:first-of-type img
+{
+	height: 33px;
+	width: 100px;
+}
+
+#thank_you_link_container a:nth-of-type(2) img
+{
+	height: 100px;
+	width: 100px;
+}
+
+#thank_you_link_container a:nth-of-type(3) img
+{
+	height: 50px;
+	width: 100px;
+}
+
+#thank_you_link_container a:nth-of-type(4) img
+{
+	height: 100px;
+	width: 100px;
+}
+
+#thank_you_link_container a:nth-of-type(5) img
+{
+	height: 80px;
+	width: 100px;
+}
+
+#thank_you_link_container a:nth-of-type(6) img
+{
+	height: 20px;
+	width: 100px;
+}

@@ -1,0 +1,29 @@
+#page_content
+{
+	height: 2500px;
+}
+
+#middle_container
+{
+	height: 2340px;
+}
+
+#resume
+{
+	background-image: url('/assets/images/tloui/Resume/Resume_Site.jpg');
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: left;
+	height: 2300px;
+	width: 800px;
+}
+
+#resume_link
+{
+	font-weight: bold;
+	height: 100px;
+	margin: 0px auto;
+	text-align: center;
+	width: 240px;
+	border: 2px solid white;
+}

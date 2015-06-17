@@ -1,0 +1,113 @@
+#page_content
+{
+	height: 725px;
+}
+
+#middle_container
+{
+	height: 450px;
+}
+
+.thumbnails
+{
+	height: 360px;
+	margin: 0px auto;
+	position: relative;
+	width: 550px;
+}
+
+.thumb_container
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 5px groove #FFFFFF;
+	cursor: pointer;
+	/* for IE */
+	filter: alpha(opacity=40);
+	float: left;
+	height: 100px;
+	margin: 0px;
+	/* CSS3 standard */
+	opacity: 0.4;
+	position: relative;
+	width: 100px;
+}
+
+.thumb_container_empty
+{
+	border: 5px groove #FFFFFF;
+	float: left;
+	height: 100px;
+	margin: 0px;
+	position: relative;
+	visibility: hidden;
+	width: 100px;
+}
+
+.thumb_container:first-of-type
+{
+	background-image: url('/assets/images/tloui/Fine_Art/BewareOfBeast_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(2)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/SippyHead_Thumb.jpg'); 
+}
+
+.thumb_container:nth-of-type(3)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/OneEyedCrawler_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(4)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/Munkbuster_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(5)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/AssortedSharpThings_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(7)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/TumTum_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(8)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/MushroomMan_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(9)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/DragonSoulja_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(12)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/B&W_WomanCup_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(13)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/ForshortenedGirl_Thumb.jpg');
+}
+
+.thumb_container:nth-of-type(14)
+{
+	background-image: url('/assets/images/tloui/Fine_Art/SelfPortrait_01_Thumb.jpg');
+}
+
+#tempImgText
+{
+	height: 50px;
+	margin: 0px auto;
+	text-align: center;
+	width: 150px;
+}
+
+#displaypic
+{
+	margin: 0px auto;
+}

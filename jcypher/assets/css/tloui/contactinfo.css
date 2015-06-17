@@ -1,0 +1,18 @@
+#page_content
+{
+	height: 600px;
+}
+
+#middle_container
+{
+	height: 300px;
+}
+
+#contact_info
+{
+	background-image: url('/assets/images/tloui/Contact_Info/Contact_Info_Site.jpg');
+	border: none;
+	float: left;
+	height: 80px;
+	width: 260px;
+}
