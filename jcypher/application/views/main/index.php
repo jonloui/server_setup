@@ -5,10 +5,12 @@
 	<title>Jon's Cyphers</title>
 	<meta name="Keywords" content="Jonathan Loui, jcypher" />
 	<meta name="description" content="Jonathan Loui's Projects and Portfolio" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<?php $this->load->view('partials/main/common_css_files'); ?>
 
-	<link rel="webpage icon" href="/assets/images/jonathan_loui_img.gif">
+	<link rel="icon" href="/assets/images/jonathan_loui_img.gif">
+
+	<?php $this->load->view('partials/main/common_js_files'); ?>
+	<script type="text/javascript" src="/assets/javascript/main/index.js"></script>
 </head>
 
 <body>

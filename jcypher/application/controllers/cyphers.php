@@ -9,6 +9,12 @@ class Cyphers extends CI_Controller {
 		$this->load->model('cypher');
 	}
 
+	public function jcyphers_api()
+	{
+		$data["cyphers"] = $this->cypher->get_all_cyphers();
+		echo json_encode($data);
+	}
+
 	public function index()
 	{
 		/*if($this->session->userdata('cypher'))
@@ -32,16 +38,24 @@ class Cyphers extends CI_Controller {
 
 	public function create()
 	{
-		$data['cypher'] = $this->input->post('cypher');
-		$data['tip'] = $this->input->post('hint');
-		$result = $this->cypher->add_cypher($data);
-		
-		if($result == 'valid')
-			$this->session->set_flashdata('success', 'Cypher was saved to the database!');
+		$data['cypher'] = strtoupper($this->input->post('cypher'));
+		$data['hint'] = strtoupper($this->input->post('hint'));
+		$result = $this->cypher->add_cypher($this->input->post(NULL, true));
+
+		if($result > 0)
+		{
+			$data['id'] = $result;
+			// $this->session->set_flashdata('success', 'Cypher was saved to the database!');
+			$cypher['new_cypher'] = $this->load->view("partials/main/add_new_cypher", $data, TRUE);
+			$cypher['error'] = false;
+		}
 		else
-			$this->session->set_flashdata('error', $result);
-		
-		redirect('/cypher');
+		{
+			$cypher['error'] = $result;
+		}
+		// 	// $this->session->set_flashdata('error', $data['id']);
+		// // redirect('/cypher');
+		echo json_encode($cypher);
 	}
 
 	public function show($id)

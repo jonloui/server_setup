@@ -10,17 +10,20 @@ class Cypher extends CI_Model {
     {
         $this->load->library('form_validation');
         $this->form_validation->set_rules("cypher", "Cypher", "trim|required|min_length[10]|xss_clean");
+        $this->form_validation->set_rules("hint", "Hint", "trim|max_length[5]|xss_clean");
 
         if($this->form_validation->run() === false)
             return validation_errors();
         else
         {
             $query = "INSERT INTO cyphers (cypher, hint, created_at) VALUES (?,?,?)";
-            $values = array(strtoupper($cypher['cypher']), $cypher['tip'], date("Y-m-d, H:i:s"));
-            if($this->db->query($query, $values))
-                return 'valid';
+            $values = array(strtoupper($cypher['cypher']), $cypher['hint'], date("Y-m-d, H:i:s"));
+            $result = $this->db->query($query, $values);
+            
+            if($result)
+                return $this->db->insert_id();
             else
-                return 'Cypher was not saved to the database!';
+                return "<p>Cypher was not added to the database!</p>";
         }
     }
 

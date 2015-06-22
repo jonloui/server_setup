@@ -1,6 +1,32 @@
+/*www.colorcombos.com*/
+
+header#title
+{
+	width: 300px;
+}
+
+#title a
+{
+	color: #FFCC00;
+}
+
+#hints_container
+{
+	margin: 20px auto;
+	width: 800px;
+}
+
+#show_hint
+{
+	display: inline-block;
+	width: 170px;
+}
+
 #character_container
 {
-	margin: 10px auto;
+	background-color: #FFCC00;
+	display: inline-block;
+	margin-left: 40px;
 	width: 530px;
 }
 
@@ -11,6 +37,16 @@
 	width: 20px;
 }
 
+#show_cypher_container
+{
+	background-color: #FFCC00;
+	font-weight: bold;
+	margin: 10px auto;
+	padding: 10px;
+	width: 670px;
+	
+}
+
 .letter, .space
 {
 	display: inline-block;
@@ -18,7 +54,6 @@
 	text-align: center;
 	vertical-align: top;
 	width: 20px;
-	/*border: 2px solid black;*/
 }
 
 input
@@ -30,4 +65,19 @@ ul
 {
 	display: inline-block;
 	list-style-type: none;
+}
+
+#options
+{
+	margin-top: 10px;
+}
+
+label
+{
+	font-size: 12px;
+}
+
+#auto_move_label
+{
+	width: 160px;
 }

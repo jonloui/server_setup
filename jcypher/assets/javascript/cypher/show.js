@@ -16,7 +16,7 @@ $(document).ready(function() {
 			{
 				current_class = "." + $(this).attr('class').substring(11);
 				$(current_class).val($(this).val());
-			//}).change(function() {					
+
 				if(prev_value != $(this).val() && prev_value_ascii >= 65 && prev_value_ascii <=90)
 				{
 					$("#character" + prev_value_ascii).show();
@@ -29,6 +29,21 @@ $(document).ready(function() {
 
 				$("#character" + current_value).hide();
 			}
+
+			if($("#auto_move:checked").length && event.which != 9 && event.which != 16)
+				$(this).focusNextInputField();
 		});
 	});
+
+	// jqueryminute.com
+	$.fn.focusNextInputField = function() {
+	    return this.each(function() {
+	        var fields = $(this).parents('form:eq(0),body').find('button,input,textarea,select');
+	        var index = fields.index( this );
+	        if ( index > -1 && ( index + 1 ) < fields.length ) {
+	            fields.eq( index + 1 ).focus();
+	        }
+	        return false;
+	    });
+	};
 });

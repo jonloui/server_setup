@@ -1,16 +1,24 @@
-#title
+body
 {
-	border-bottom: 5px groove blue;
+	background-image: url('/assets/images/cypher/blu_stripes.png');
+}
+
+header#title
+{
+	border-bottom: 5px groove #000066;
 	border-radius: 15px;
+	color: #FFCC00;
 	margin: 10px auto;
 	text-align: center;
+	text-shadow: 2px 2px silver, 2px 2px 5px #000066;
 	width: 230px;
 }
 
 #welcome_text
 {
-	border: 5px inset silver;
+	border: 5px ridge silver;
 	border-radius: 15px;
+	box-shadow: 5px 5px silver;
 	font-size: 14px;
 	margin: 20px auto;
 	padding: 10px;
@@ -58,18 +66,28 @@ label
 
 #new_cypher input:last-of-type
 {
-	background-color: green;
+	background-color: #FFCC00;
 	border: 5px groove blue;
 	border-radius: 15px;
+	box-shadow: 2px 2px silver;
 	color: white;
 	cursor: pointer;
+	font-weight: bold;
 	margin-left: 280px;
-	padding: 0px 10px;
+	padding: 2px 10px;
 }
 
 #cypher_index_table
 {
-	margin: 0px auto;
+	box-shadow: 5px 5px silver;
+	color: white;
+	font-weight: bold;
+	margin: 20px auto;
+}
+
+thead tr
+{
+	background-color: #FFCC00;
 }
 
 th, td
@@ -87,4 +105,19 @@ th:first-of-type, td:first-of-type
 td:first-of-type
 {
 	text-align: left;
+}
+
+tbody tr:nth-child(odd)
+{
+	background-color: #000066;
+}
+
+tbody tr:nth-child(even)
+{
+	background-color: #FFCC00;
+}
+
+table a
+{
+	color: black;
 }

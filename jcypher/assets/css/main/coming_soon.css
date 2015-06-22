@@ -5,9 +5,7 @@
 
 #coming_soon_message
 {
-	border: 5px groove silver;
-	border-radius: 15px;
-	color: blue;
+	color: gray;
 	font-weight: bold;
 	margin: 20px auto;
 	padding: 10px;

@@ -7,6 +7,7 @@ $route['special_thanks'] = "main/special_thanks";
 $route['coming_soon'] = "main/coming_soon";
 
 $route['cypher'] = "cyphers/index";
+$route['jcyphers_api'] = "cyphers/jcyphers_api";
 
 $route['tloui'] = "tlouis/index";
 $route['tloui/animations'] = "tlouis/animations";

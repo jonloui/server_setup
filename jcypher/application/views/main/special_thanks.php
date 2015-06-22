@@ -5,22 +5,24 @@
 	<title>Jon's Cyphers</title>
 	<meta name="Keywords" content="Jonathan Loui, jcypher" />
 	<meta name="description" content="Jonathan Loui's Special Thanks" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
+	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<link rel="stylesheet" type="text/css" href="/assets/css/main/special_thanks.css" />
 
-	<link rel="webpage icon" href="/assets/images/jonathan_loui_img.gif">
+	<link rel="icon" href="/assets/images/jonathan_loui_img.gif">
+
+	<?php $this->load->view('partials/main/common_js_files'); ?>
+	<script type="text/javascript" src="/assets/javascript/main/special_thanks.js"></script>
 </head>
 
 <body>
 	<?php $this->load->view('partials/header'); ?>
 	
 	<h1 id="title">Special Thanks</h1>
-	<div id='thank_you_message'>
+	<div id='thank_you_message' class="silver_box">
 		Special thanks to those developers who made it easier for us to build websites and power this site.
 	</div>
 
-	<div id="thank_you_link_container">
+	<div id="thank_you_link_container" class="silver_box">
 		<a target="_blank" href="http://aws.amazon.com/"><img src="/assets/images/main/aws_logo.jpg" alt="AWS logo" /></a>
 		<a target="_blank" href="http://www.codeigniter.com/"><img src="/assets/images/main/code_igniter_logo.png" alt="Code Igniter logo" /></a>
 		<a target="_blank" href="http://www.mysql.com/"><img src="/assets/images/main/mysql_logo.png " alt="MySQL logo" /></a>

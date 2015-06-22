@@ -20,17 +20,17 @@ class Tlouis extends CI_Controller {
 
 	public function fineart()
 	{
-		$this->load->view('tloui/fineart');
+		$this->load->view('tloui/FineArt');
 	}
 
 	public function resume()
 	{
-		$this->load->view('tloui/resume');
+		$this->load->view('tloui/Resume');
 	}
 
 	public function contactinfo()
 	{
-		$this->load->view('tloui/contactinfo');
+		$this->load->view('tloui/ContactInfo');
 	}
 }
 

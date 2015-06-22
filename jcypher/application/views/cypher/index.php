@@ -3,34 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jon's Cyphers</title>
-	<!-- add a description -->
-	<meta name="description" content="" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/cypher/index.css" />
+	<meta name="description" content="Jon's Cyphers where you can solve or add cyphers." />
+	<?php $this->load->view('partials/main/common_css_files'); ?>
+	<?php $this->load->view('partials/cypher/common_css_files'); ?>
 
-	<link rel="webpage icon" href="/assets/images/jonathan_loui_img.gif">
+	<link rel="icon" href="/assets/images/jonathan_loui_img.gif">
+
+	<?php $this->load->view('partials/main/common_js_files'); ?>
+	<?php $this->load->view('partials/cypher/common_js_files'); ?>
 </head>
 
 <body>
 	<?php $this->load->view('partials/header'); ?>
 
-	<h1 id="title">Jon's Cyphers</h1>
+	<header id="title">
+		<h1>Jon's Cyphers</h1>
+	</header>
 	<div id='welcome_text'>
-		Welcome to my cypher page where you can enter a cypher you wish to decrypt.
+		Welcome to my cypher page where you can enter a cypher you wish to decrypt. <a target="_blank" href="jcyphers_api">API here</a>
 	</div>
 
 	<div id="error">
 		<?php
-			if($this->session->flashdata('error'))
-				echo $this->session->flashdata('error');
+			// if($this->session->flashdata('error'))
+				// echo $this->session->flashdata('error');
 		?>
 	</div>
 
 	<div id="success">
 		<?php
-			if($this->session->flashdata('success'))
-				echo $this->session->flashdata('success');
+			// if($this->session->flashdata('success'))
+				// echo $this->session->flashdata('success');
 		?>
 	</div>
 
@@ -39,7 +42,7 @@
 			<label for="cypher">Enter cypher (only alphanumeric characters):</label>
 			<textarea name="cypher" rows="5" cols="30" ></textarea>
 			<label for="text">Any hints?</label>
-			<input type="text" name="hint" placeholder="A=E" />
+			<input type="text" name="hint" placeholder="A=E" maxlength="5" />
 			<input type="submit" value="Add cypher" />
 		</form>
 	</div>
@@ -55,16 +58,14 @@
 		</thead>
 		<tbody>
 			<?php
-				$ctr = 1;
 				foreach ($all_cyphers as $cypher_info)
 				{
 					echo "<tr>
 							<td>" . $cypher_info['cypher'] . "</td>
 							<td>" . $cypher_info['hint'] . "</td>
 							<td><a href='/cyphers/show/" . $cypher_info['id'] . "'>Solve</a></td>
-							<td>" . $ctr . "</td>
+							<td>" . $cypher_info['id'] . "</td>
 						  </tr>";
-					$ctr++;
 				}
 			?>
 		</tbody>

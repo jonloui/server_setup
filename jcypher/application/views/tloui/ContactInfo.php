@@ -7,17 +7,14 @@
 	<meta name="Keywords" content="Timothy Loui, tloui, Timothy Loui&#039;s portfolio, artwork, digital, portfolio" />
 	<meta name="Description" content="Timothy Loui&#039;s portfolio containing his creative artwork, short animations, resume, and portfolio work" />
 
-	<link rel="stylesheet" type="text/css" href="/assets/css/normalize.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/main.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/tloui/tlouiStyleSheet.css" />
-	<link rel="stylesheet" type="text/css" href="/assets/css/tloui/index.css" />
+	<?php $this->load->view('partials/main/common_css_files'); ?>
+	<?php $this->load->view('partials/tloui/common_css_files'); ?>
 	<link rel="stylesheet" type="text/css" href="/assets/css/tloui/contactinfo.css" />
 	
-	<link rel="webpage icon" href="/assets/images/tloui/img/tloui_icon.jpg">
+	<link rel="icon" href="/assets/images/tloui/img/tloui_icon.jpg">
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="/assets/javascript/tloui/tlouiJavaFunctions.js"></script>
-	<script type="text/javascript" src="/assets/javascript/tloui/index.js"></script>
+	<?php $this->load->view('partials/main/common_js_files'); ?>
+	<?php $this->load->view('partials/tloui/common_js_files'); ?>
 </head>
 
 <body onload="setTitle();">
