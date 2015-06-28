@@ -19,5 +19,5 @@ $(document).ready(function() {
 	});
 
 	$(".header_link").css("color","white");
-	$("#cypher_link").css("color","#91AFBD");
+	$("#projects_link").css("color","#91AFBD");
 });

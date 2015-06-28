@@ -13,6 +13,11 @@ class Main extends CI_Controller {
 		$this->load->view('main/index');
 	}
 
+	public function projects()
+	{
+		$this->load->view('main/projects');
+	}
+
 	public function special_thanks()
 	{
 		$this->load->view('main/special_thanks');

@@ -1,0 +1,243 @@
+body
+{
+	background-color: #348BD6;
+	padding:0px; 
+	margin:0px; 
+}
+
+#container
+{
+	background-color: #D7A71F;
+	margin: 0px auto;
+	padding: 0px;
+	overflow: hidden;
+	width: 1000px;
+}
+
+#load_container
+{
+	background-image: url('/assets/images/baby_leo/img_background/train.gif');
+	height: 355px;
+	position: relative;
+	width: 576px;
+}
+
+#title_container
+{
+	background-color: #D7A71F;
+	display: none;
+	height: 200px;
+	padding-top: 30px;
+}
+
+#left_title
+{
+	background-image: url('/assets/images/baby_leo/img_background/decoration.gif');
+	display: inline-block;
+	height: 190px;
+	margin-left: 40px;
+	width: 190px;
+}
+
+#title
+{
+	background-image: url('/assets/images/baby_leo/img_background/title.gif');
+	border: none;
+	display: inline-block;
+	height: 130px;
+	margin-left: 80px;
+	top: 30px;
+	width: 367px;
+}
+
+#right_title
+{
+	background-image: url('/assets/images/baby_leo/img_background/bboy.gif');
+	display: inline-block;
+	height: 190px;
+	margin-left: 80px;
+	width: 191px;
+}
+
+.title
+{
+	animation: myfirst 4s;
+	-moz-animation :myfirst 4s; /* Firefox */
+	-webkit-animation: myfirst 4s; /* Safari and Chrome */
+}
+
+@keyframes myfirst
+{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+	from {-moz-transform:rotate(0deg);}
+	to {-moz-transform:rotate(360deg);}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+	from {transform:rotate(0deg);}
+	to {transform:rotate(360deg);}
+}
+
+#img_section
+{
+	background-color: #D7A71F;
+	display: none;
+	height: 700px;
+	margin-top: 0px;
+}
+
+#thumb_container
+{
+	display: inline-block;
+	height: 80px;
+	margin: 50px 0px 50px 40px;
+	overflow: hidden;
+	vertical-align: top;
+	width: 900px;
+}
+
+.thumb_sect
+{
+	display: none;
+	height: 80px;
+	width: 940px;
+}
+
+.thumb
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	float: left;
+	height: 73px; 
+	width: 98px;
+}
+
+#button_container
+{
+	display: inline-block;
+	margin-top: 50px;
+	width: 40px;
+}
+
+#up_button, #down_button
+{
+	background-position: center;
+	background-repeat: no-repeat;
+	cursor: pointer;
+	height: 40px;
+	width: 40px;
+}
+
+#up_button
+{
+	background-image: url('/assets/images/baby_leo/img/up.gif');
+	visibility: hidden;
+}
+
+#down_button { background-image: url('/assets/images/baby_leo/img/down.gif'); }
+
+#display
+{
+	background-image: url('/assets/images/baby_leo/img_background/happy_1st.gif');
+	background-position: center;
+	background-repeat: no-repeat;
+	border: 5px groove #348BD6;
+	box-shadow: 5px 5px 5px #888888;
+	cursor: pointer;
+	height: 486px;
+	margin: 0px auto;
+	width: 648px;
+}
+
+#left_button, #right_button
+{
+	background-color: inherit;
+	background-image: url('/assets/images/baby_leo/img/left.gif');
+	border: none;
+	display: none;
+	filter: alpha(opacity=60); /* For IE8 and earlier */
+	height: 40px;
+	opacity: 0.6;
+	position: relative;
+	top: 223px;
+	width: 40px;
+}
+
+#right_button
+{
+	background-image: url('/assets/images/baby_leo/img/right.gif');
+	left: 564px;
+}
+
+/*#IMG_4406B { background-image:url('img_gallery/IMG_4406B.JPG'); }
+#IMG_4407B { background-image:url('img_gallery/IMG_4407B.JPG'); }
+#IMG_4408B { background-image:url('img_gallery/IMG_4408B.JPG'); }
+#IMG_4409B { background-image:url('img_gallery/IMG_4409B.JPG'); }
+#IMG_4411B { background-image:url('img_gallery/IMG_4411B.JPG'); }
+#IMG_4412B { background-image:url('img_gallery/IMG_4412B.JPG'); }
+#IMG_4413B { background-image:url('img_gallery/IMG_4413B.JPG'); }
+#IMG_4414B { background-image:url('img_gallery/IMG_4414B.JPG'); }
+#IMG_4415B { background-image:url('img_gallery/IMG_4415B.JPG'); }
+
+#IMG_4416B { background-image:url('img_gallery/IMG_4416B.JPG'); }
+#IMG_4417B { background-image:url('img_gallery/IMG_4417B.JPG'); }
+#IMG_4419B { background-image:url('img_gallery/IMG_4419B.JPG'); }
+#IMG_4420B { background-image:url('img_gallery/IMG_4420B.JPG'); }
+#IMG_4421B { background-image:url('img_gallery/IMG_4421B.JPG'); }
+#IMG_4422B { background-image:url('img_gallery/IMG_4422B.JPG'); }
+#IMG_4426B { background-image:url('img_gallery/IMG_4426B.JPG'); }
+#IMG_4427B { background-image:url('img_gallery/IMG_4427B.JPG'); }
+#IMG_4428B { background-image:url('img_gallery/IMG_4428B.JPG'); }
+#IMG_4429B { background-image:url('img_gallery/IMG_4429B.JPG'); }
+#IMG_4430B { background-image:url('img_gallery/IMG_4430B.JPG'); }
+#IMG_4431B { background-image:url('img_gallery/IMG_4431B.JPG'); }
+#IMG_4432B { background-image:url('img_gallery/IMG_4432B.JPG'); }
+#IMG_4433B { background-image:url('img_gallery/IMG_4433B.JPG'); }
+#IMG_4434B { background-image:url('img_gallery/IMG_4434B.JPG'); }
+#IMG_4435B { background-image:url('img_gallery/IMG_4435B.JPG'); }
+#IMG_4436B { background-image:url('img_gallery/IMG_4436B.JPG'); }
+#IMG_4437B { background-image:url('img_gallery/IMG_4437B.JPG'); }
+#IMG_4438B { background-image:url('img_gallery/IMG_4438B.JPG'); }
+#IMG_4439B { background-image:url('img_gallery/IMG_4439B.JPG'); }
+#IMG_4440B { background-image:url('img_gallery/IMG_4440B.JPG'); }
+#IMG_4443B { background-image:url('img_gallery/IMG_4443B.JPG'); }
+#IMG_4445B { background-image:url('img_gallery/IMG_4445B.JPG'); }
+#IMG_4448B { background-image:url('img_gallery/IMG_4448B.JPG'); }
+#IMG_4449B { background-image:url('img_gallery/IMG_4449B.JPG'); }
+#IMG_4450B { background-image:url('img_gallery/IMG_4450B.JPG'); }
+#IMG_4451B { background-image:url('img_gallery/IMG_4451B.JPG'); }
+#IMG_4452B { background-image:url('img_gallery/IMG_4452B.JPG'); }
+#IMG_4453B { background-image:url('img_gallery/IMG_4453B.JPG'); }
+#IMG_4454B { background-image:url('img_gallery/IMG_4454B.JPG'); }
+#IMG_4455B { background-image:url('img_gallery/IMG_4455B.JPG'); }
+#IMG_4456B { background-image:url('img_gallery/IMG_4456B.JPG'); }
+#IMG_4457B { background-image:url('img_gallery/IMG_4457B.JPG'); }
+#IMG_4460B { background-image:url('img_gallery/IMG_4460B.JPG'); }
+#IMG_4460B { background-image:url('img_gallery/IMG_4460B.JPG'); }
+#IMG_4461B { background-image:url('img_gallery/IMG_4461B.JPG'); }
+#IMG_4463B { background-image:url('img_gallery/IMG_4463B.JPG'); }
+#IMG_4464B { background-image:url('img_gallery/IMG_4464B.JPG'); }
+#IMG_4465B { background-image:url('img_gallery/IMG_4465B.JPG'); }
+#IMG_4466B { background-image:url('img_gallery/IMG_4466B.JPG'); }
+#IMG_4467B { background-image:url('img_gallery/IMG_4467B.JPG'); }
+#IMG_4468B { background-image:url('img_gallery/IMG_4468B.JPG'); }
+#IMG_4469B { background-image:url('img_gallery/IMG_4469B.JPG'); }
+#IMG_4470B { background-image:url('img_gallery/IMG_4470B.JPG'); }
+#IMG_4471B { background-image:url('img_gallery/IMG_4471B.JPG'); }
+#IMG_4472B { background-image:url('img_gallery/IMG_4472B.JPG'); }
+#IMG_4473B { background-image:url('img_gallery/IMG_4473B.JPG'); }
+#IMG_4474B { background-image:url('img_gallery/IMG_4474B.JPG'); }
+#IMG_4475B { background-image:url('img_gallery/IMG_4475B.JPG'); }
+#IMG_4476B { background-image:url('img_gallery/IMG_4476B.JPG'); }
+#IMG_4480B { background-image:url('img_gallery/IMG_4480B.JPG'); }
+#IMG_4481B { background-image:url('img_gallery/IMG_4481B.JPG'); }
+#IMG_4482B { background-image:url('img_gallery/IMG_4482B.JPG'); }
+#IMG_4483B { background-image:url('img_gallery/IMG_4483B.JPG'); }
+#IMG_4484B { background-image:url('img_gallery/IMG_4484B.JPG'); }*/

@@ -29,9 +29,9 @@ class Cyphers extends CI_Controller {
 				'test' => "No cypher has been entered!"
 			);
 		}
-
 		$this->load->view('cypher/index', $data);
 		*/
+
 		$data['all_cyphers'] = $this->cypher->get_all_cyphers();
 		$this->load->view('cypher/index', $data);
 	}
@@ -46,7 +46,7 @@ class Cyphers extends CI_Controller {
 		{
 			$data['id'] = $result;
 			// $this->session->set_flashdata('success', 'Cypher was saved to the database!');
-			$cypher['new_cypher'] = $this->load->view("partials/main/add_new_cypher", $data, TRUE);
+			$cypher['new_cypher'] = $this->load->view("partials/cypher/add_new_cypher", $data, TRUE);
 			$cypher['error'] = false;
 		}
 		else

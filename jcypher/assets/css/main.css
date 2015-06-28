@@ -10,10 +10,27 @@ nav
 {
 	background-color: gray;
 	font-family: Calibri;
-	font-size: 16px;
+	font-size: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
 	width: 100%;
+}
+
+nav svg
+{
+	display: inline-block;
+	height: 90px;
+	margin-left: 10px;
+	position: relative;
+	top: 45px;
+	vertical-align: middle;
+	width: 90px;
+}
+
+nav svg text
+{
+	font-family: "Calibri";
+	font-size: 25px;
 }
 
 nav a

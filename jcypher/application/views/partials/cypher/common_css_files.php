@@ -1,1 +1,1 @@
-	<link rel="stylesheet" type="text/css" href="/assets/css/cypher/index.css" />
+	<link rel="stylesheet/less" type="text/css" href="/assets/css/cypher/index.less" />

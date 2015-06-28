@@ -1,7 +1,4 @@
-body
-{
-	background-image: url('/assets/images/cypher/blu_stripes.png');
-}
+body { background-image: url('/assets/images/cypher/blu_stripes.png'); }
 
 header#title
 {
@@ -34,10 +31,7 @@ header#title
 	width: 300px;
 }
 
-#success
-{
-	color: green;
-}
+#success { color: green; }
 
 #form_container
 {
@@ -59,10 +53,7 @@ label
 	width: 350px;
 }
 
-#new_cypher input, #new_cypher textarea
-{
-	margin-bottom: 20px;
-}
+#new_cypher input, #new_cypher textarea { margin-bottom: 20px; }
 
 #new_cypher input:last-of-type
 {
@@ -85,10 +76,7 @@ label
 	margin: 20px auto;
 }
 
-thead tr
-{
-	background-color: #FFCC00;
-}
+thead tr { background-color: #FFCC00; }
 
 th, td
 {
@@ -97,27 +85,12 @@ th, td
 	text-align: center;
 }
 
-th:first-of-type, td:first-of-type
-{
-	width: 600px;
-}
+th:first-of-type, td:first-of-type { width: 600px; }
 
-td:first-of-type
-{
-	text-align: left;
-}
+td:first-of-type { text-align: left; }
 
-tbody tr:nth-child(odd)
-{
-	background-color: #000066;
-}
+tbody tr:nth-child(odd) { background-color: #000066; }
 
-tbody tr:nth-child(even)
-{
-	background-color: #FFCC00;
-}
+tbody tr:nth-child(even) { background-color: #FFCC00; }
 
-table a
-{
-	color: black;
-}
+table a {  color: black; }

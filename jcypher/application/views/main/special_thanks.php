@@ -6,7 +6,7 @@
 	<meta name="Keywords" content="Jonathan Loui, jcypher" />
 	<meta name="description" content="Jonathan Loui's Special Thanks" />
 	<?php $this->load->view('partials/main/common_css_files'); ?>
-	<link rel="stylesheet" type="text/css" href="/assets/css/main/special_thanks.css" />
+	<link rel="stylesheet/less" type="text/css" href="/assets/css/main/special_thanks.less" />
 
 	<link rel="icon" href="/assets/images/jonathan_loui_img.gif">
 
@@ -23,13 +23,14 @@
 	</div>
 
 	<div id="thank_you_link_container" class="silver_box">
-		<a target="_blank" href="http://aws.amazon.com/"><img src="/assets/images/main/aws_logo.jpg" alt="AWS logo" /></a>
-		<a target="_blank" href="http://www.codeigniter.com/"><img src="/assets/images/main/code_igniter_logo.png" alt="Code Igniter logo" /></a>
-		<a target="_blank" href="http://www.mysql.com/"><img src="/assets/images/main/mysql_logo.png " alt="MySQL logo" /></a>
-		<a target="_blank" href="http://jquery.com/"><img src="/assets/images/main/jquery_logo.png" alt="jQuery logo" /></a>
-		<a target="_blank" href="http://www.ubuntu.com/"><img src="/assets/images/main/ubuntu_logo.png" alt="Ubuntu logo" /></a>
-		<a target="_blank" href="http://nginx.org/"><img src="/assets/images/main/nginx_logo.png" alt="Nginx logo" /></a>
-		<a target="_blank" href=""><img src="/assets/images/main/ " alt="" /></a>
+		<a target="_blank" href="http://aws.amazon.com/"><img src="/assets/images/main/special_thanks/aws_logo.jpg" alt="AWS logo" /></a>
+		<a target="_blank" href="http://www.codeigniter.com/"><img src="/assets/images/main/special_thanks/code_igniter_logo.png" alt="Code Igniter logo" /></a>
+		<a target="_blank" href="http://www.mysql.com/"><img src="/assets/images/main/special_thanks/mysql_logo.png " alt="MySQL logo" /></a>
+		<a target="_blank" href="http://jquery.com/"><img src="/assets/images/main/special_thanks/jquery_logo.png" alt="jQuery logo" /></a>
+		<a target="_blank" href="http://www.ubuntu.com/"><img src="/assets/images/main/special_thanks/ubuntu_logo.png" alt="Ubuntu logo" /></a>
+		<a target="_blank" href="http://nginx.org/"><img src="/assets/images/main/special_thanks/nginx_logo.png" alt="Nginx logo" /></a>
+		<a target="_blank" href="http://lesscss.org/"><img src="/assets/images/main/special_thanks/less_logo.png" alt="Less logo" /></a>
+		<a target="_blank" href=""><img src="/assets/images/main/special_thanks/ " alt=" logo" /></a>
 	</div>
 </body>
 </html>

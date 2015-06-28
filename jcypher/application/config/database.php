@@ -13,7 +13,7 @@ if(ENVIRONMENT == 'production')
 else
 {
 	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
+	$db['default']['username'] = '';
 	$db['default']['password'] = '';
 	$db['default']['database'] = '';
 }

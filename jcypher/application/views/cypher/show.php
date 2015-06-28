@@ -7,7 +7,7 @@
 	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<?php $this->load->view('partials/cypher/common_css_files'); ?>
-	<link rel="stylesheet" type="text/css" href="/assets/css/cypher/show.css" />
+	<link rel="stylesheet/less" type="text/css" href="/assets/css/cypher/show.less" />
 
 	<link rel="icon" href="/assets/images/jonathan_loui_img.gif">
 	

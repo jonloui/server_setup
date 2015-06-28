@@ -1,0 +1,86 @@
+#title { width: 150px; }
+
+#project_description
+{
+	color: gray;
+	font-family: sans-serif;
+	font-weight: bold;
+	margin: 20px auto;
+	padding: 10px;
+	width: 500px;
+}
+
+#content_container
+{
+	margin: 30px auto;
+	width: 1000px;
+}
+
+#projects_link_container
+{
+	display: inline-block;
+	height: 250px;
+	overflow-y: scroll;
+	vertical-align: top;
+	width: 650px;
+}
+
+.thumb
+{
+	display: inline-block;
+	height: 100px;
+	margin: 10px;
+	text-align: center;
+	vertical-align: top;
+	width: 100px;
+}
+
+#cypher
+{
+	background-image: url("/assets/images/main/projects/blu_stripes.png");
+	background-repeat: repeat;
+	color: #FFCC00;
+	font-size: 28px;
+	height: 70px;
+	padding-top: 30px;
+	text-shadow: 2px 2px silver, 2px 2px 5px #000066;
+}
+
+#tloui
+{
+	background-color: #C3C3C3;
+	background-image: url("/assets/images/main/projects/tloui_background.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100px 40px;
+}
+
+#baby_leo
+{
+	background-color: #348BD6;
+	background-repeat: no-repeat;
+	color: #D7A71F;
+	font-weight: bold;
+	height: 60px;
+	padding-top: 40px;
+}
+
+#coming_soon
+{
+	background-color: white;
+	color: gray;
+	height: 70px;
+	font-weight: bold;
+	padding-top: 30px;
+	/*background-image: url("/assets/images/main/projects/");*/
+}
+
+#description
+{
+	color: gray;
+	display: inline-block;
+	font-weight: bold;
+	margin-left: 20px;
+	visibility: hidden;
+	width: 300px;
+}
