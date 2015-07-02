@@ -5,6 +5,8 @@ $(document).ready(function() {
 		});
 	});
 
+	$("#title").lettering();
+
 	var gallery = create_gallery(0, "down");
 	$("#thumb_container").html(gallery).children(".thumb_sect").slideDown("slow");
 

@@ -23,7 +23,10 @@
 		<a href="/cyphers"><h1>Jon's Cypher: <?php echo $cypher['id']; ?></h1></a>
 	</header>
 	<section id="hints_container">
-		<div id="show_hint">Your hint is <?php echo $cypher['hint']; ?>!</div>
+		<div id="show_hint">
+			<p class="silver_box">Your hint is <?php echo $cypher['hint']; ?>!</p>
+			<button class="silver_box">Show Hint</button>
+		</div>
 
 		<div id="character_container" class="silver_box">
 			<?php

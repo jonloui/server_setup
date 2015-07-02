@@ -41,14 +41,25 @@ body
 
 #title
 {
-	background-image: url('/assets/images/baby_leo/img_background/title.gif');
+	/*background-image: url('/assets/images/baby_leo/img_background/title.gif');*/
 	border: none;
 	display: inline-block;
+	font-size: 48px;
+	font-weight: bold;
 	height: 130px;
 	margin-left: 80px;
+	padding-top: 50px;
+	text-align: center;
+	text-shadow: 5px 5px 10px #FFFFFF;
 	top: 30px;
+	vertical-align: top;
 	width: 367px;
 }
+
+.char1,.char5, .char11, .char15 {color: #981727;}
+.char2,.char7, .char12, .char16 {color: #2C7CCC;}
+.char3,.char8, .char13, .char17 {color: #69419C;}
+.char4,.char9, .char14, .char18 {color: #57A72C;}
 
 #right_title
 {

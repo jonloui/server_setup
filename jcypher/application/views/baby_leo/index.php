@@ -25,7 +25,7 @@ Description: Basic Gallery of images of baby Leo's 1st Birthday
 		<div id="load_container"></div>
 		<header id="title_container">
 			<div id="left_title" class="title"></div>
-			<div id="title"></div>
+			<div id="title">Happy 1st Birthday</div>
 			<div id="right_title" class="title"></div>
 		</header>
 		<section id="img_section">

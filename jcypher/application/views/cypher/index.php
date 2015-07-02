@@ -19,7 +19,7 @@
 	<header id="title">
 		<h1>Jon's Cyphers</h1>
 	</header>
-	<div id='welcome_text'>
+	<div id='welcome_text' class="silver_box">
 		Welcome to my cypher page where you can enter a cypher you wish to decrypt. <a target="_blank" href="jcyphers_api">API here</a>
 	</div>
 
@@ -50,10 +50,10 @@
 	<table id="cypher_index_table">
 		<thead>
 			<tr>
-				<th>Cypher</th>
+				<th class="header">Cypher</th>
 				<th>Hint</th>
 				<th>Action</th>
-				<th>Number</th>
+				<th class="header headerSortDown">Number</th>
 			</tr>
 		</thead>
 		<tbody>

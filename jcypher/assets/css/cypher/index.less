@@ -1,21 +1,23 @@
+@blue: #000066;
+@yellow: #FFCC00;
+@silver: silver;
+@default_margin: 10px auto;
+
 body { background-image: url('/assets/images/cypher/blu_stripes.png'); }
 
 #title
 {
-	border-bottom: 5px groove #000066;
+	border-bottom: 5px groove @blue;
 	border-radius: 15px;
-	color: #FFCC00;
-	margin: 10px auto;
+	color: @yellow;
+	margin: @default_margin;
 	text-align: center;
-	text-shadow: 2px 2px silver, 2px 2px 5px #000066;
+	text-shadow: 2px 2px @silver, 2px 2px 5px @blue;
 	width: 230px;
 }
 
 #welcome_text
 {
-	border: 5px ridge silver;
-	border-radius: 15px;
-	box-shadow: 5px 5px silver;
 	font-size: 14px;
 	margin: 20px auto;
 	padding: 10px;
@@ -26,7 +28,7 @@ body { background-image: url('/assets/images/cypher/blu_stripes.png'); }
 {
 	color: red;
 	font-weight: bold;
-	margin: 10px auto;
+	margin: @default_margin;
 	text-align: center;
 	width: 300px;
 }
@@ -41,7 +43,7 @@ body { background-image: url('/assets/images/cypher/blu_stripes.png'); }
 
 form#new_cypher
 {
-	margin: 10px auto;
+	margin: @default_margin;
 	width: 630px;
 
 	label
@@ -56,10 +58,10 @@ form#new_cypher
 
 	input:last-of-type
 	{
-		background-color: #FFCC00;
-		border: 5px groove blue;
+		background-color: @yellow;
+		border: 5px groove @blue;
 		border-radius: 15px;
-		box-shadow: 2px 2px silver;
+		box-shadow: 2px 2px @silver;
 		color: white;
 		cursor: pointer;
 		font-weight: bold;
@@ -70,27 +72,39 @@ form#new_cypher
 
 #cypher_index_table
 {
-	box-shadow: 5px 5px silver;
+	box-shadow: 5px 5px @silver;
 	color: white;
 	font-weight: bold;
 	margin: 20px auto;
 
-	thead tr { background-color: #FFCC00; }
+	thead tr { background-color: @yellow; }
 
 	th, td
 	{
 		margin-right: 10px;
-		padding: 10px 10px;
+		padding: 10px 20px;
 		text-align: center;
 	}
+
+	.header
+	{
+		background-image: url('/assets/images/cypher/bg.gif');
+		background-position: center right;
+		background-repeat: no-repeat;
+		cursor: pointer;
+	}
+
+	.headerSortDown { background-image: url('/assets/images/cypher/asc.gif'); }
+
+	.headerSortUp { background-image: url('/assets/images/cypher/desc.gif'); }
 
 	th:first-of-type, td:first-of-type { width: 600px; }
 
 	td:first-of-type { text-align: left; }
 
-	tbody tr:nth-child(odd) { background-color: #000066; }
+	tbody tr:nth-child(odd) { background-color: @blue; }
 
-	tbody tr:nth-child(even) { background-color: #FFCC00; }
+	tbody tr:nth-child(even) { background-color: @yellow; }
 
 	a { color: black; }
 }

@@ -46,6 +46,15 @@
 	text-shadow: 2px 2px silver, 2px 2px 5px #000066;
 }
 
+#bookmark
+{
+	background-image: url("/assets/images/bookmark/jquery-ui/ui-bg_diagonals-thick_15_0b3e6f_40x40.png");
+	color: white;
+	font-weight: bold;
+	height: 60px;
+	padding-top: 40px;
+}
+
 #tloui
 {
 	background-color: #C3C3C3;

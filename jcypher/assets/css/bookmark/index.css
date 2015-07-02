@@ -1,0 +1,99 @@
+body
+{
+	background-color: white;
+}
+
+#title
+{
+	border: none;
+	width: 350px;
+}
+
+#message
+{
+	margin: 10px auto;
+	width: 900px;
+}
+
+#bookmark_container
+{
+	display: inline-block;
+	margin: 20px 100px;
+	vertical-align: top;
+	width: 500px;
+}
+	#bookmark_container h3 .ui-icon-plus
+	{
+		display: inline-block;
+		float:right;
+		margin-right: 20px;
+		vertical-align: middle;
+	}
+
+	#bookmark_container h3 .ui-icon-plus:hover
+	{
+		background-color: black;
+	}
+
+#form_container
+{
+	display: inline-block;
+	margin-top: 20px;
+	vertical-align: top;
+	width: 430px;
+	/*border: 2px solid black;*/
+}
+
+#add_new_section_container
+{
+	padding: 10px;
+}
+
+	#add_new_section_container header
+	{
+		text-align: center;
+	}
+
+	label
+	{
+		display: inline-block;
+		width: 200px;
+		/*border: 2px solid black;*/
+	}
+
+	.input_default
+	{
+		background-color: #292829;
+		color: #73AAFF;
+	}
+
+	.input_focus
+	{
+		background-color: #00498C;
+		color: white;
+	}
+
+	#add_new_section_container form input:last-of-type
+	{
+		margin: 20px 0px 0px 120px;
+	}
+
+#add_new_link_container
+{
+	/* */
+}
+	#add_new_link_container header
+	{
+		text-align: center;
+	}
+
+	#add_new_link_container form input:last-of-type
+	{
+		margin: 20px 10px 0px 70px;
+		vertical-align: middle;
+	}
+
+	#add_new_link_container form button
+	{
+		margin-top: 20px;
+	}

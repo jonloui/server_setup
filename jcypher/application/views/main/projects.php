@@ -24,9 +24,10 @@
 
 	<section id="content_container">
 		<div id="projects_link_container" class="silver_box">
-			<a href="/cypher"><div id="cypher" class="thumb" description="My most recent project inspired by cryptograms/cypher websites that allow people to solve these puzzles, but not upload their own.">Cypher</div></a>
+			<a href="/cypher"><div id="cypher" class="thumb" description="My most recent project inspired by cryptograms/cypher websites that allow people to solve these puzzles, but not upload their own. I used AJAX, PHP, jQuery to help build it. There's also an API link on the main page.  I used a jQuery library to sort the table by Christian Bach.">Cypher</div></a>
+			<a href="/bookmark"><div id="bookmark" class="thumb" description="Access your bookmarks from any device. Using jQuery, jQuery UI, MySQL. Login option coming soon">Bookmark</div></a>
 			<a href="/tloui"><div id="tloui" class="thumb" description="A profile website I originally built using HTML, CSS, and javascript. As I learned more web development technologies, I incorporated PHP and jQuery."></div></a>
-			<a href="/baby_leo"><div id="baby_leo" class="thumb" description="A webpage I built using mostly Javascript, jQuery, and a little CSS3 for my nephew's 1st birthday containing a gallery of images.">Baby Leo</div></a>
+			<a href="/baby_leo"><div id="baby_leo" class="thumb" description="A webpage I built using mostly Javascript, jQuery, and a little CSS3 for my nephew's 1st birthday containing a gallery of images.  Used a lettering jQuery library by git user davatron5000.">Baby Leo</div></a>
 			<a href="/coming_soon"><div id="coming_soon" class="thumb" description="Coming Soon.">Coming Soon</div></a>
 		</div>
 

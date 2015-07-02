@@ -1,4 +1,9 @@
 $(document).ready(function() {
+	$("#show_hint button").click(function() {
+		$(this).text() == "Show Hint" ? $("#show_hint p").css("visibility", "visible") : $("#show_hint p").css("visibility", "hidden");	
+		$(this).text() == "Show Hint" ? $(this).text("Hide Hint") : $(this).text("Show Hint");
+	});
+
 	$('.char_input').focus(function() {
 		var prev_value = $(this).val();
 		var prev_value_ascii = $(this).val().charCodeAt(0);

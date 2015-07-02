@@ -1,28 +1,44 @@
 /*www.colorcombos.com*/
+@blue: #000066;
+@yellow: #FFCC00;
 
 header#title
 {
 	width: 300px;
 
-	a { color: #FFCC00; }
+	a { color: @yellow; }
 }
 
 #hints_container
 {
 	margin: 20px auto;
-	width: 800px;
+	width: 820px;
 
 	#show_hint
 	{
 		display: inline-block;
-		width: 170px;
+		width: 260px;
+
+		p
+		{
+			background-color: @yellow;
+			display: inline-block;
+			text-align: center;
+			visibility: hidden;
+			width: 150px;
+		}
+
+		button
+		{
+			background-color: @yellow;
+			padding: 0px 7px;
+		}
 	}
 
 	#character_container
 	{
-		background-color: #FFCC00;
+		background-color: @yellow;
 		display: inline-block;
-		margin-left: 40px;
 		width: 530px;
 
 		.chars
@@ -36,7 +52,7 @@ header#title
 
 #show_cypher_container
 {
-	background-color: #FFCC00;
+	background-color: @yellow;
 	font-weight: bold;
 	margin: 10px auto;
 	padding: 10px;

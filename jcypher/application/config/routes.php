@@ -9,6 +9,9 @@ $route['coming_soon'] = "main/coming_soon";
 
 $route['baby_leo'] = "baby_leos/index";
 
+$route['bookmark'] = "bookmarks/index";
+$route['bookmark/create/(:num)'] = "bookmarks/create/$1";
+
 $route['calculator'] = "calculators/index";
 
 $route['cypher'] = "cyphers/index";
