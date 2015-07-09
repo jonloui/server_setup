@@ -3,7 +3,9 @@
 class Cypher extends CI_Model {
     function get_all_cyphers()
     {
-        return $this->db->query("SELECT * FROM cyphers") -> result_array();
+        return $this->db->query("SELECT cyphers.id, cyphers.cypher, cyphers.hint, users.first_name, users.last_name, users.user_name FROM cyphers 
+                                 JOIN cyphers_creators ON cyphers.id = cyphers_creators.cypher_id
+                                 JOIN users ON cyphers_creators.user_id = users.id") -> result_array();
     }
 
     function add_cypher($cypher)

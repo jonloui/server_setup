@@ -1,6 +1,7 @@
 body
 {
 	background-color: #363636;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	margin: 0px auto;
 	padding: 0px;
 	/*width: 1000px;*/
@@ -9,7 +10,7 @@ body
 nav
 {
 	background-color: gray;
-	font-family: Calibri;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
 	font-size: 25px;
 	font-weight: bold;
 	text-transform: uppercase;
@@ -37,32 +38,28 @@ nav
 		color: white;
 		margin: 0px 10px;
 	}
+
+	#log_link
+	{
+		float: right;
+		margin: 25px 10% 0 0;
+	}
 }
 
-a
-{
-	text-decoration: none;
-}
-
-#main_link
-{
-	height: 50px;
-	vertical-align: middle;
-	width: 50px;
-}
+a { text-decoration: none; }
 
 #title
 {
-	border-bottom: 5px groove blue;
-	border-radius: 15px;
 	margin: 10px auto;
 	text-align: center;
-	width: 600px;
+	width: 520px;
 }
 
 #main_welcome_text
 {
+	color: white;
 	margin: 20px auto;
+	padding: 10px;
 	text-align: center;
 	width: 400px;
 }
@@ -71,5 +68,12 @@ a
 {
 	border: 5px ridge silver;
 	border-radius: 15px;
-	box-shadow: 5px 5px silver;
+}
+
+.login_message
+{
+	margin: 10px auto;
+	padding: 10px;
+	text-align: center;
+	width: 340px;
 }

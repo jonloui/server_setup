@@ -17,10 +17,15 @@ $route['calculator'] = "calculators/index";
 $route['cypher'] = "cyphers/index";
 $route['jcyphers_api'] = "cyphers/jcyphers_api";
 
+$route['session/create'] = "sessions/create";
+$route['session/delete'] = "sessions/destroy";
+
 $route['tloui'] = "tlouis/index";
 $route['tloui_animations'] = "tlouis/animations";
 $route['tloui_fineart'] = "tlouis/fineart";
 $route['tloui_resume'] = "tlouis/resume";
 $route['tloui_contactinfo'] = "tlouis/contactinfo";
 
+$route['user'] = "users/index";
+$route['user/create'] = "users/create";
 //end of routes.php

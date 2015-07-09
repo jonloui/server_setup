@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Cyphers extends CI_Controller {
+require_once('main.php');
+
+class Cyphers extends Main {
 
 	public function __construct()
 	{
@@ -32,6 +34,8 @@ class Cyphers extends CI_Controller {
 		$this->load->view('cypher/index', $data);
 		*/
 
+		array_key_exists("login_status", $this->user_info) ? $data["login_status"] = $this->user_info["login_status"] : $data["login_status"] = false;
+		array_key_exists("first_name", $this->user_info) ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
 		$data['all_cyphers'] = $this->cypher->get_all_cyphers();
 		$this->load->view('cypher/index', $data);
 	}
@@ -60,6 +64,8 @@ class Cyphers extends CI_Controller {
 
 	public function show($id)
 	{
+		array_key_exists("login_status", $this->user_info) ? $data["login_status"] = $this->user_info["login_status"] : $data["login_status"] = false;
+		array_key_exists("first_name", $this->user_info) ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
 		$data['cypher'] = $this->cypher->get_cypher($id);
 		$this->load->view('cypher/show', $data);
 	}

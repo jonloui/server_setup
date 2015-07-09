@@ -3,7 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jon's Cyphers</title>
+
+	<meta name="author" content="Jonathan Loui" />
 	<meta name="description" content="Jon's Cyphers individual cyphers" />
+	<meta name="keywords" content="jcypher, cypher, cryptogram, Jonathan, Loui" />
 	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<?php $this->load->view('partials/cypher/common_css_files'); ?>

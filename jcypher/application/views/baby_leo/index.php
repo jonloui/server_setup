@@ -9,7 +9,11 @@ Description: Basic Gallery of images of baby Leo's 1st Birthday
 <head>
 	<meta charset="UTF-8">
 	<title> Baby Leo's 1st Birthday </title>
+
+	<meta name="author" content="Jonathan Loui" />
 	<meta name="description" content="Simple gallery of nephew's birthday party" />
+	<meta name="keywords" content="jcypher, Jonathan, Loui" />
+	
 	<link rel="icon" href="/assets/images/baby_leo/img/icon.gif" />
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<link rel="stylesheet" type="text/css" href="/assets/css/baby_leo/baby_leo.css" />

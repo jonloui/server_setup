@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Baby_leos extends CI_Controller {
+require_once('main.php');
+
+class Baby_leos extends Main {
 
 	public function __construct()
 	{
@@ -10,7 +12,7 @@ class Baby_leos extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('baby_leo/index');
+		$this->load->view('baby_leo/index', $this->user_info);
 	}
 }
 

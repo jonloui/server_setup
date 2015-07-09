@@ -3,9 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Timothy Loui's Contact Info</title>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-	<meta name="Keywords" content="Timothy Loui, tloui, Timothy Loui&#039;s portfolio, artwork, digital, portfolio" />
-	<meta name="Description" content="Timothy Loui&#039;s portfolio containing his creative artwork, short animations, resume, and portfolio work" />
+
+	<meta name="author" content="Jonathan Loui" />
+	<meta name="description" content="Timothy Loui&#039;s contact info" />
+	<meta name="keywords" content="Timothy, Loui, tloui, artwork, digital, portfolio" />
 
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<?php $this->load->view('partials/tloui/common_css_files'); ?>

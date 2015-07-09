@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jon's Calculator</title>
-	<meta name="Keywords" content="Jonathan Loui, jcypher" />
+
+	<meta name="author" content="Jonathan Loui" />
 	<meta name="description" content="Jonathan Loui's Calculator Project" />
+	<meta name="keywords" content="jcypher, calculator, Jonathan, Loui" />
+	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<link rel="stylesheet" type="text/css" href="/assets/css/calculator/calculator.css" />
 	

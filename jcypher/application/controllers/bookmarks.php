@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Bookmarks extends CI_Controller {
+require_once('main.php');
+
+class Bookmarks extends Main {
 
 	public function __construct()
 	{
@@ -11,14 +13,19 @@ class Bookmarks extends CI_Controller {
 
 	public function index()
 	{
-		$data["sections"] = $this->bookmark->get_all_sections();
+		array_key_exists("login_status", $this->user_info) ? $data["login_status"] = $this->user_info["login_status"] : $data["login_status"] = false;
+		array_key_exists("id", $this->user_info) && $this->user_info["id"] != false ? $id = $this->user_info["id"] : $id=1;
+		array_key_exists("first_name", $this->user_info) && $this->user_info["first_name"] != false ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
+
+		$data["id"] = $id;
+		$data["sections"] = $this->bookmark->get_all_sections($id);
 		$data["links"] = $this->bookmark->get_all_links();
 		$data["link_locations"] = $this->bookmark->get_all_link_locations();
-
+		
 		$this->load->view('bookmark/index', $data);
 	}
 
-	// make a create function
+	// modify create function
 	public function create($number)
 	{
 		$status;

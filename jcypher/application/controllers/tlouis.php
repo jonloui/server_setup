@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Tlouis extends CI_Controller {
+require_once('main.php');
+
+class Tlouis extends Main {
 
 	public function __construct()
 	{
@@ -10,27 +12,27 @@ class Tlouis extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('tloui/index');
+		$this->load->view('tloui/index', $this->user_info);
 	}
 
 	public function animations()
 	{
-		$this->load->view('tloui/animations');
+		$this->load->view('tloui/animations', $this->user_info);
 	}
 
 	public function fineart()
 	{
-		$this->load->view('tloui/FineArt');
+		$this->load->view('tloui/FineArt', $this->user_info);
 	}
 
 	public function resume()
 	{
-		$this->load->view('tloui/Resume');
+		$this->load->view('tloui/Resume', $this->user_info);
 	}
 
 	public function contactinfo()
 	{
-		$this->load->view('tloui/ContactInfo');
+		$this->load->view('tloui/ContactInfo', $this->user_info);
 	}
 }
 

@@ -1,18 +1,86 @@
+body { background-color: white; }
+
 #title
 {
-	width: 300px;
+	border: none;
+	width: 600px;
+}
+
+#message
+{
+	margin: 10px auto;
+	width: 900px;
 }
 
 #bookmark_container
 {
 	display: inline-block;
+	margin: 20px 100px;
 	vertical-align: top;
-	width: 500px;
+	/*width: 500px;*/
+	width: 40%;
+
+	h3 .ui-icon-plus
+	{
+		display: inline-block;
+		float:right;
+		margin-right: 20px;
+		vertical-align: middle;
+	}
+
+	h3 .ui-icon-plus:hover { background-color: black; }
+}
+	
+
+#form_container
+{
+	display: inline-block;
+	margin-top: 20px;
+	vertical-align: top;
+	width: 35%;
+	/*width: 430px;*/
+	/*border: 2px solid black;*/
 }
 
 #add_new_section_container
 {
-	display: inline-block;
-	vertical-align: top;
-	width: 200px;
+	padding: 10px;
+
+	header { text-align: center; }
+
+	label
+	{
+		display: inline-block;
+		width: 200px;
+	}
+
+	.input_default
+	{
+		background-color: #292829;
+		color: #73AAFF;
+	}
+
+	.input_focus
+	{
+		background-color: #00498C;
+		color: white;
+	}
+
+	form input:last-of-type { margin: 20px 0px 0px 20%; }
+}
+
+	
+
+#add_new_link_container
+{
+	/* */
+	header { text-align: center; }
+
+	form input:last-of-type
+	{
+		margin: 20px 10px 0px 70px;
+		vertical-align: middle;
+	}
+
+	form button { margin-top: 20px; }
 }

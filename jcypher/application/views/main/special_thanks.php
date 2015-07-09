@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jon's Cyphers</title>
-	<meta name="Keywords" content="Jonathan Loui, jcypher" />
+
+	<meta name="author" content="Jonathan Loui" />
 	<meta name="description" content="Jonathan Loui's Special Thanks" />
+	<meta name="keywords" content="jcypher, Jonathan, Loui" />
+	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<link rel="stylesheet/less" type="text/css" href="/assets/css/main/special_thanks.less" />
 
@@ -30,6 +33,7 @@
 		<a target="_blank" href="http://www.ubuntu.com/"><img src="/assets/images/main/special_thanks/ubuntu_logo.png" alt="Ubuntu logo" /></a>
 		<a target="_blank" href="http://nginx.org/"><img src="/assets/images/main/special_thanks/nginx_logo.png" alt="Nginx logo" /></a>
 		<a target="_blank" href="http://lesscss.org/"><img src="/assets/images/main/special_thanks/less_logo.png" alt="Less logo" /></a>
+		<a target="_blank" href=""><img src="/assets/images/main/special_thanks/jQueryUI_logo.png" alt="jQuery UI logo" /></a>
 		<!-- <a target="_blank" href=""><img src="/assets/images/main/special_thanks/ " alt=" logo" /></a> -->
 	</div>
 </body>

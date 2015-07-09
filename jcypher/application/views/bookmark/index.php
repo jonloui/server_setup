@@ -3,7 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jon's Bookmark</title>
+
+	<meta name="author" content="Jonathan Loui" />
 	<meta name="description" content="Jon's Bookmark where users can access their bookmarks anywhere." />
+	<meta name="keywords" content="jcypher, bookmark, Jonathan, Loui" />
+	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<?php $this->load->view('partials/bookmark/common_css_files'); ?>
 
@@ -17,11 +21,14 @@
 	<?php $this->load->view('partials/header'); ?>
 
 	<header id="title" class="ui-widget">
-		<h1>Jon's Bookmarks</h1>
+		<h1><?= $first_name ?>'s Bookmarks</h1>
 	</header>
-	<div id='message'>
-		I initially created this project in 2009 and it has gone through several versions over the years.  I decided to redo the concept using jQuery UI to give it a simple interface, but also eliminated some of the user customizing ability.  I used PHP code in a past version to manipulate one html file.  Now I'm using a MySQL database to store the information.
-	</div>
+	<?php
+		if($id == 1)
+			echo "<div id='message'>
+					I initially created this project in 2009 and it has gone through several versions over the years.  I decided to redo the concept using jQuery UI to give it a simple interface, but also eliminated some of the user customizing ability.  I used PHP code in a past version to manipulate one html file.  Now I'm using a MySQL database to store the information.
+				  </div>";
+	?>
 	<div id="bookmark_container">
 	<?php
 		foreach ($sections as $section_info)

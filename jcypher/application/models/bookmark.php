@@ -1,9 +1,9 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
 class Bookmark extends CI_Model {
-    function get_all_sections()
+    function get_all_sections($id)
     {
-        return $this->db->query("SELECT * FROM bookmark_sections") -> result_array();
+        return $this->db->query("SELECT * FROM bookmark_sections JOIN bookmark_section_owner ON bookmark_sections.id = bookmark_section_owner.section_id WHERE bookmark_section_owner.user_id={$id}") -> result_array();
     }
 
     function get_all_links()
@@ -26,7 +26,6 @@ class Bookmark extends CI_Model {
         else
         {
             $query = "INSERT INTO bookmark_sections (name, created_at) VALUES (?,?)";
-            // $values = array($name['section_name'], date("Y-m-d, H:i:s"));
             $values = array($name, date("Y-m-d, H:i:s"));
             $result = $this->db->query($query, $values);
             

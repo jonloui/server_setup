@@ -10,7 +10,7 @@ class Calculators extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('calculator/index');
+		$this->load->view('calculator/index', $this->user_info);
 	}
 }
 

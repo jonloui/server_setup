@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Jon's Cyphers</title>
-	<meta name="Keywords" content="Jonathan Loui, jcypher" />
+
+	<meta name="author" content="Jonathan Loui" />
 	<meta name="description" content="Jonathan Loui's Projects" />
+	<meta name="keywords" content="jcypher, Jonathan, Loui" />
+	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
 	<link rel="stylesheet" type="text/css" href="/assets/css/main/projects.css" />
 
