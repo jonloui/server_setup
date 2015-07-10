@@ -42,13 +42,17 @@ class Cyphers extends Main {
 
 	public function create()
 	{
-		$data['cypher'] = strtoupper($this->input->post('cypher'));
-		$data['hint'] = strtoupper($this->input->post('hint'));
-		$result = $this->cypher->add_cypher($this->input->post(NULL, true));
+		$data['user_id'] = $this->user_info['id'];
+		// $data['cypher'] = $this->input->post("cypher", true);
+		// $data['hint'] = $this->input->post("hint", true);
+		$data['cypher'] = strtoupper($this->input->post('cypher', TRUE));
+		$data['hint'] = strtoupper($this->input->post('hint', TRUE));
+		$result = $this->cypher->add_cypher($data);
 
 		if($result > 0)
 		{
-			$data['id'] = $result;
+			$data['cypher_id'] = $result;
+			$data['user_name'] = $this->cypher->get_cypher_owner($result);
 			// $this->session->set_flashdata('success', 'Cypher was saved to the database!');
 			$cypher['new_cypher'] = $this->load->view("partials/cypher/add_new_cypher", $data, TRUE);
 			$cypher['error'] = false;

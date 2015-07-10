@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Calculators extends CI_Controller {
+require_once('main.php');
+
+class Calculators extends Main {
 
 	public function __construct()
 	{

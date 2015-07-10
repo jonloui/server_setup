@@ -31,7 +31,9 @@ class Bookmarks extends Main {
 		$status;
 		if($number == 0)
 		{
-			$status = $this->bookmark->add_section($this->input->post('section_name', true));
+			$data['section_name'] = $this->input->post('section_name', true);
+			array_key_exists("id", $this->user_info) && $this->user_info["id"] != false ? $data['user_id'] = $this->user_info["id"] : $data['user_id']=1;
+			$status = $this->bookmark->add_section($data);
 		}
 		else if($number > 0)
 		{

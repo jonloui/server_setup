@@ -26,11 +26,16 @@ class Bookmark extends CI_Model {
         else
         {
             $query = "INSERT INTO bookmark_sections (name, created_at) VALUES (?,?)";
-            $values = array($name, date("Y-m-d, H:i:s"));
+            $values = array($name['section_name'], date("Y-m-d, H:i:s"));
             $result = $this->db->query($query, $values);
+
+            $section_id = $this->db->insert_id();
+            $query = "INSERT INTO bookmark_section_owner (section_id, user_id, created_at) VALUES (?,?,?)";
+            $values = array($section_id, $name['user_id'], date("Y-m-d, H:i:s"));
+            $this->db->query($query, $values);
             
             if($result)
-                return $this->db->insert_id();
+                return $section_id;
             else
                 return "<p>Section was not added to the database!</p>";
         }

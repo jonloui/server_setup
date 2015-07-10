@@ -19,14 +19,26 @@ class Cypher extends CI_Model {
         else
         {
             $query = "INSERT INTO cyphers (cypher, hint, created_at) VALUES (?,?,?)";
-            $values = array(strtoupper($cypher['cypher']), $cypher['hint'], date("Y-m-d, H:i:s"));
+            $values = array($cypher['cypher'], $cypher['hint'], date("Y-m-d, H:i:s"));
             $result = $this->db->query($query, $values);
+            $cypher_id = $this->db->insert_id();
+
+            $query = "INSERT INTO cyphers_creators (cypher_id, user_id, created_at) VALUES (?,?,?)";
+            $values = array($cypher_id, $cypher['user_id'], date("Y-m-d, H:i:s"));
+            $this->db->query($query, $values);
             
             if($result)
-                return $this->db->insert_id();
+                return $cypher_id;
             else
                 return "<p>Cypher was not added to the database!</p>";
         }
+    }
+
+    function get_cypher_owner($id)
+    {
+        return $this->db->query("SELECT users.first_name, users.last_name, users.user_name FROM cyphers_creators
+                                 JOIN users ON cyphers_creators.user_id = users.id
+                                 WHERE cypher_id={$id}")->row_array();
     }
 
     function get_cypher($id)
