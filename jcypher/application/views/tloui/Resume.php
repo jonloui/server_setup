@@ -20,7 +20,7 @@
 
 <body onload="setTitle();">
 <?php $this->load->view('partials/tloui/top'); ?>
-<!------ Resume along with link to save resume ------>
+<!-- Resume along with link to save resume -->
 			<div id="resume" onclick="window.open('/assets/misc/tloui/Resume/Resume.doc', '_blank');"></div>
 
 			<div id="resume_link">

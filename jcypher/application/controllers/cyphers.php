@@ -35,7 +35,14 @@ class Cyphers extends Main {
 		*/
 
 		array_key_exists("login_status", $this->user_info) ? $data["login_status"] = $this->user_info["login_status"] : $data["login_status"] = false;
+		array_key_exists("id", $this->user_info) && $this->user_info["id"] != false ? $id = $this->user_info["id"] : $id=1;
 		array_key_exists("first_name", $this->user_info) ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
+
+		array_key_exists("user_name", $this->user_info) && $this->user_info["user_name"] != false ? $data["user_name"] = $this->user_info["user_name"] : $data["user_name"] = "Jon";
+		// resizing user_name
+		strlen($data["user_name"]) > 10 ? $data["user_name"] = substr($data["user_name"], 0, 10) . "..." : "";
+
+		$data["id"] = $id;
 		$data['all_cyphers'] = $this->cypher->get_all_cyphers();
 		$this->load->view('cypher/index', $data);
 	}
@@ -68,9 +75,18 @@ class Cyphers extends Main {
 
 	public function show($id)
 	{
-		array_key_exists("login_status", $this->user_info) ? $data["login_status"] = $this->user_info["login_status"] : $data["login_status"] = false;
-		array_key_exists("first_name", $this->user_info) ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
+		// $id=17;
 		$data['cypher'] = $this->cypher->get_cypher($id);
+
+		// USER INFO
+		array_key_exists("login_status", $this->user_info) ? $data["login_status"] = $this->user_info["login_status"] : $data["login_status"] = false;
+		array_key_exists("id", $this->user_info) && $this->user_info["id"] != false ? $id = $this->user_info["id"] : $id=1;
+		array_key_exists("first_name", $this->user_info) ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
+		array_key_exists("user_name", $this->user_info) && $this->user_info["user_name"] != false ? $data["user_name"] = $this->user_info["user_name"] : $data["user_name"] = "Jon";
+		// resizing user_name
+		strlen($data["user_name"]) > 10 ? $data["user_name"] = substr($data["user_name"], 0, 10) . "..." : "";
+		$data["id"] = $id;
+
 		$this->load->view('cypher/show', $data);
 	}
 }

@@ -3,7 +3,7 @@
 class Bookmark extends CI_Model {
     function get_all_sections($id)
     {
-        return $this->db->query("SELECT * FROM bookmark_sections JOIN bookmark_section_owner ON bookmark_sections.id = bookmark_section_owner.section_id WHERE bookmark_section_owner.user_id={$id}") -> result_array();
+        return $this->db->query("SELECT bookmark_sections.id, bookmark_sections.name FROM bookmark_sections JOIN bookmark_section_owner ON bookmark_sections.id = bookmark_section_owner.section_id WHERE bookmark_section_owner.user_id={$id} ORDER BY bookmark_sections.id") -> result_array();
     }
 
     function get_all_links()
@@ -51,6 +51,10 @@ class Bookmark extends CI_Model {
             return validation_errors();
         else
         {
+            // find out if url doesn't contain http:// or https://
+            if(!strpos("http://", $data['link']) && !strpos("https://", $data['link']))
+                $data['link'] = "http://" . $data['link'];
+
             $query = "INSERT INTO bookmark_links (name, link, created_at) VALUES (?,?,?)";
             $values = array($data['name'], $data['link'], date("Y-m-d, H:i:s"));
             $result = $this->db->query($query, $values);
@@ -62,6 +66,7 @@ class Bookmark extends CI_Model {
                 $query = "INSERT INTO bookmark_link_locations (bookmark_link_id, bookmark_section_id, created_at) VALUES (?,?,?)";
                 $values = array($result, $data['id'], date("Y-m-d, H:i:s"));
                 $this->db->query($query, $values);
+                
                 return $result;
             }
             else

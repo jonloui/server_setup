@@ -22,7 +22,7 @@
 	
 	<h1 id="title">Projects</h1>
 	<div id='project_description' class="silver_box">
-		Here are some of the projects I have worked on in the past and some personal projects which are on going.
+		Here are some of the projects I have worked on in the past and some personal projects.
 	</div>
 
 	<section id="content_container">

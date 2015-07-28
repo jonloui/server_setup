@@ -21,7 +21,7 @@ $(document).ready(function() {
 	});
 
 	// Sorting table on final column and making colums 2 and 3 unsortable.
-	$("#cypher_index_table").tablesorter({sortList: [[3,0]],
+	$("#cypher_index_table").tablesorter({sortList: [[4,0]],
 										  headers: {
 										  			1: {
 										  				sorter: false

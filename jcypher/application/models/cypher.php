@@ -3,9 +3,17 @@
 class Cypher extends CI_Model {
     function get_all_cyphers()
     {
-        return $this->db->query("SELECT cyphers.id, cyphers.cypher, cyphers.hint, users.first_name, users.last_name, users.user_name FROM cyphers 
+        return $this->db->query("SELECT cyphers.id, cyphers.cypher, cyphers.hint, cyphers_creators.user_id AS user_id, users.first_name, users.last_name, users.user_name FROM cyphers 
                                  JOIN cyphers_creators ON cyphers.id = cyphers_creators.cypher_id
-                                 JOIN users ON cyphers_creators.user_id = users.id") -> result_array();
+                                 JOIN users ON cyphers_creators.user_id = users.id
+                                 ORDER BY cyphers.id") -> result_array();
+    }
+
+    function get_cyphers_by_id($id)
+    {
+        return $this->db->query("SELECT cyphers.id, cyphers.cypher, cyphers.hint FROM cyphers 
+                                 JOIN cyphers_creators ON cyphers.id = cyphers_creators.cypher_id
+                                 WHERE cyphers_creators.user_id={$id}") -> result_array();
     }
 
     function add_cypher($cypher)
@@ -43,7 +51,23 @@ class Cypher extends CI_Model {
 
     function get_cypher($id)
     {
-        return $this->db->query("SELECT * FROM cyphers WHERE id = ?", array($id)) -> row_array();
+        $last_cypher_id = $this->db->query("SELECT id FROM cyphers 
+                                            ORDER BY id DESC
+                                            LIMIT 1;") -> row_array();
+        $last_cypher_id = (int)$last_cypher_id['id'];
+        // if $id is greater than the last cypher id, set id to 2
+        if($last_cypher_id < $id)
+            $id = 2;
+
+        $result = $this->db->query("SELECT * FROM cyphers WHERE id = ?", array($id)) -> row_array();
+
+        // search for next available cypher if cyphers have been deleted.
+        while(sizeof($result) == 0)
+        {
+            return $this->db->query("SELECT * FROM cyphers WHERE id = ?", array($id)) -> row_array();
+        }
+        return $result;
+        // return $this->db->query("SELECT * FROM cyphers WHERE id = ?", array($id)) -> row_array();
     }
 }
 

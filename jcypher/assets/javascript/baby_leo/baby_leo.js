@@ -40,7 +40,7 @@ $(document).ready(function() {
 
 	$(document).on("click", ".thumb", function() {
 		temp_id = $(this).attr("id");
-		$("#display").css("background-image", "url(/assets/images/baby_leo/img_gallery/" + temp_id + ".JPG");
+		$("#display").css("background-image", "url(/assets/images/baby_leo/img_gallery/" + temp_id + ".JPG)");
 	});
 
 	$(document).on("click", "#left_button", function(event) {
@@ -52,10 +52,10 @@ $(document).ready(function() {
 		for(var i=img_array.length-1; i > -1; i--)
 		{
 			if(background_img.indexOf("happy_1st") > 0 || background_img.indexOf(img_array[0]) > 0)
-				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[0] + ".JPG");
+				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[0] + ".JPG)");
 			else if(background_img.indexOf(img_array[i]) > 0)
 			{
-				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[i-1] + ".JPG");
+				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[i-1] + ".JPG)");
 				if(i%9 == 0)
 				{
 					row = Math.floor(i / 9 + 1);
@@ -82,10 +82,10 @@ $(document).ready(function() {
 		for(var i=0; i < img_array.length; i++)
 		{
 			if(background_img.indexOf("happy_1st") > 0)
-				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[0] + ".JPG");
+				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[0] + ".JPG)");
 			else if(background_img.indexOf(img_array[i]) > 0 && i != (img_array.length-1))
 			{
-				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[i+1] + ".JPG");
+				$("#display").css('background-image', "url(/assets/images/baby_leo/img_gallery/" + img_array[i+1] + ".JPG)");
 				if(i%9 == 8)
 				{
 					row = Math.floor(i / 9 + 1);

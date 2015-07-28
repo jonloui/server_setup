@@ -9,6 +9,7 @@ class Users extends Main {
 		parent::__construct();
 		// $this->output->enable_profiler();
 		$this->load->model('user');
+		$this->load->model('cypher');
 	}
 
 	public function index()
@@ -38,7 +39,27 @@ class Users extends Main {
 
 	public function show($id)
 	{
+		$data['login_status'] = $this->user_info['login_status'];
 		// show a user's profile based upon $id
+		$id == $this->user_info['id'] ? $data['cur_user'] = true : $data['cur_user'] = false;
+
+		$profile = $this->user->get_user_by_id($id);
+
+		$data['id'] = $id;
+		$data['first_name'] = $profile['first_name'];
+		$data['last_name'] = $profile['last_name'];
+		$data['user_name'] = $profile['user_name'];
+		$data['email'] = $profile['email'];
+
+		$data['cyphers'] = $this->cypher->get_cyphers_by_id($id);
+		// var_dump($data);
+
+		$this->load->view('user/show', $data);
+	}
+
+	public function update()
+	{
+		// $this->input->post(first_name, true);
 	}
 }
 

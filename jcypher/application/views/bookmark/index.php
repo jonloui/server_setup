@@ -72,9 +72,9 @@
 			</header>
 			<form action="/bookmarks/create/1" method="post">
 				<label for="link">Add a new Link:</label>
-				<input type="text" name="link" class="input_default" />
+				<input type="text" name="link" class="input_default" placeholder="http://jcypher.com/bookmark" />
 				<label for="link_name">Name for Link:</label>
-				<input type="text" name="link_name" class="input_default" maxlength="50" />
+				<input type="text" name="link_name" class="input_default" maxlength="50" placeholder="jcypher" />
 				<input type="submit" value="Add Link" />
 				<button type="button" id="form_cancel">Cancel</button>
 			</form>

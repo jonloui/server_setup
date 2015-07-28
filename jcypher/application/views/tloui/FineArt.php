@@ -22,7 +22,7 @@
 
 <body onload="setTitle();">
 <?php $this->load->view('partials/tloui/top'); ?>
-<!------ Fine Art Thumbnails ------>
+<!-- Fine Art Thumbnails -->
 			<div class="thumbnails">
 				<div class="thumb_container" 
 				onclick="displayimage(1, '800px', '612px', '1337px');" 
@@ -76,12 +76,12 @@
 
 				<div class="thumb_container_empty"></div>
 
-	<!------ Textbox to display when cursor is over an image ------>
+	<!-- Textbox to display when cursor is over an image -->
 				<div id="tempImgText"></div>
 			</div>
 		</div>
 
-<!------ Fine Art Display ------>
+<!-- Fine Art Display -->
 		<div style="width:100%; position:relative; margin-top:0px; ">
 			<div id="displaypic"></div>				
 		</div>

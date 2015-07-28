@@ -61,5 +61,10 @@ class User extends CI_Model {
 
         return $result;
     }
+
+    function get_user_by_id($id)
+    {
+        return  $this->db->query("SELECT first_name, last_name, user_name, email FROM users WHERE id={$id};")->row_array();
+    }
 }
 //end of user model

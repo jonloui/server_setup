@@ -20,7 +20,7 @@
 
 <body onload="setTitle();">
 <?php $this->load->view('partials/tloui/top'); ?>
-<!------ Contact Information ------>
+<!-- Contact Information -->
 			<div id="contact_info"></div>
 		</div>
 	</div>

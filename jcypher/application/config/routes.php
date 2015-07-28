@@ -28,4 +28,5 @@ $route['tloui_contactinfo'] = "tlouis/contactinfo";
 
 $route['user'] = "users/index";
 $route['user/create'] = "users/create";
+$route['user/profile/(:num)'] = "users/show/$1";
 //end of routes.php

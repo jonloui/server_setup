@@ -17,6 +17,9 @@ class Bookmarks extends Main {
 		array_key_exists("id", $this->user_info) && $this->user_info["id"] != false ? $id = $this->user_info["id"] : $id=1;
 		array_key_exists("first_name", $this->user_info) && $this->user_info["first_name"] != false ? $data["first_name"] = $this->user_info["first_name"] : $data["first_name"] = "Jon";
 
+		array_key_exists("user_name", $this->user_info) && $this->user_info["user_name"] != false ? $data["user_name"] = $this->user_info["user_name"] : $data["user_name"] = "Jon";
+		strlen($data["user_name"]) > 10 ? $data["user_name"] = substr($data["user_name"], 0, 10) . "..." : "";
+
 		$data["id"] = $id;
 		$data["sections"] = $this->bookmark->get_all_sections($id);
 		$data["links"] = $this->bookmark->get_all_links();
@@ -29,6 +32,8 @@ class Bookmarks extends Main {
 	public function create($number)
 	{
 		$status;
+		$number = (int)$number;
+
 		if($number == 0)
 		{
 			$data['section_name'] = $this->input->post('section_name', true);

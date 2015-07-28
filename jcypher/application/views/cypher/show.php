@@ -23,67 +23,77 @@
 	<?php $this->load->view('partials/header'); ?>
 
 	<header id="title">
-		<a href="/cyphers"><h1>Jon's Cypher: <?php echo $cypher['id']; ?></h1></a>
+		<a href="/cyphers"><h1>Jon's Cypher</h1></a>
+		<!-- : <?php //echo $cypher['id']; ?> -->
 	</header>
-	<section id="hints_container">
-		<div id="show_hint">
-			<p class="silver_box">Your hint is <?php echo $cypher['hint']; ?>!</p>
-			<button class="silver_box">Show Hint</button>
-		</div>
 
+	<section id="cypher_menu">
+		<header>
+			<h2>Menu Options</h2>
+		</header>
+		<!--
+			select a new quote
+			AJAX features to work on
+			like feature
+			mark down as solved
+		-->
+		<button class="silver_box" id="show_hint" alt="Your hint is <?php echo $cypher['hint']; ?>">Show Hint</button>
+		<button class="silver_box" id="reset_button">Reset</button>
+		<a href="/cyphers/show/<?php echo $cypher['id'] + 1; ?>"><button class="silver_box">New Cypher</button></a>
+		<button class="silver_box" id="auto_cursor">Auto Cursor: on</button>
+	</section>
+
+	<div id="cypher_container">
 		<div id="character_container" class="silver_box">
 			<?php
 				for($i=65; $i < 91; $i++)
 					echo "<p class='chars' id='character" . $i . "'>" . chr($i) . "</p>";
 			?>
 		</div>
-	</section>
 
-	<div id="show_cypher_container" class="silver_box">
-		<form action="#" method="post">
-		<?php
-			$line_counter = 0;
+		<div id="show_cypher_container" class="silver_box">
+			<form action="#" method="post">
+			<?php
+				$line_counter = 0;
 
-			echo "<div>";
+				echo "<div>";
 
-			for($i=0; $i < strlen($cypher['cypher']); $i++)
-			{
-				$character = substr($cypher['cypher'], $i, 1);
-				$ascii_value = ord($character);
-				$line_counter++;
-				
-				if($ascii_value >= 65 && $ascii_value <= 90)
+				for($i=0; $i < strlen($cypher['cypher']); $i++)
 				{
-				 	echo "<p class='letter'>" . $character . 
-				 			"<input type='text' class='char_input " . $ascii_value . "' maxlength='1' />
-				 		  </p>";
-				}
-				else
-					echo "<p class='space'>" . $character . "</p>";
-
-				if($character == " ")
-				{
-					if(strpos(substr($cypher['cypher'], $i+1), " "))
-						$temp_string_length = strpos(substr($cypher['cypher'], $i+1), " ");
-					// last word in cypher
-					else
-						$temp_string_length = strlen(substr($cypher['cypher'], $i+1));
+					// $character = substr($cypher['cypher'], $i, 1);
+					$character = $cypher['cypher'][$i];
+					$ascii_value = ord($character);
+					$line_counter++;
 					
-					if(($line_counter + $temp_string_length) > 25)
+					if($ascii_value >= 65 && $ascii_value <= 90)
 					{
-						echo "</div><div>";
-						$line_counter=0;
+					 	echo "<p class='letter'>" . $character . 
+					 			"<input type='text' class='char_input " . $ascii_value . "' maxlength='1' />
+					 		  </p>";
+					}
+					else
+						echo "<p class='space'>" . $character . "</p>";
+
+					if($character == " ")
+					{
+						if(strpos(substr($cypher['cypher'], $i+1), " "))
+							$temp_string_length = strpos(substr($cypher['cypher'], $i+1), " ");
+						// last word in cypher
+						else
+							$temp_string_length = strlen(substr($cypher['cypher'], $i+1));
+						
+						if(($line_counter + $temp_string_length) > 25)
+						{
+							echo "</div><div>";
+							$line_counter=0;
+						}
 					}
 				}
-			}
 
-			echo "</div>
-					<div id='options'>
-						<label for='auto_move' id='auto_move_label'>Automatically move cursor</label>
-						<input type='checkbox' id='auto_move' checked />
-					</div>";
-		?>
-		</form>
+				echo "</div>";
+			?>
+			</form>
+		</div>
 	</div>
 </body>
 </html>

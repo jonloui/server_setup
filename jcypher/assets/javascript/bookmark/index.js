@@ -8,6 +8,7 @@ $(document).ready(function() {
 	}).blur(function() {
 		$(this).toggleClass("input_focus");
 	});
+
 	$("input[type=submit], button").button();
 
 	$("#bookmark_container h3 .ui-icon-plus").click(function() {

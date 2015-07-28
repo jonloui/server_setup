@@ -1,7 +1,27 @@
 $(document).ready(function() {
-	$("#show_hint button").click(function() {
-		$(this).text() == "Show Hint" ? $("#show_hint p").css("visibility", "visible") : $("#show_hint p").css("visibility", "hidden");	
-		$(this).text() == "Show Hint" ? $(this).text("Hide Hint") : $(this).text("Show Hint");
+	$("#show_hint").hover(function() {
+		$(this).text() == "Show Hint" ? $(this).text("Are you sure?") : "";
+	},
+	function() {
+		$(this).text() == "Are you sure?" ? $(this).text("Show Hint") : "";
+	});
+
+	// show the hint to the user
+	$("#show_hint").click(function() {
+		$(this).text($(this).attr("alt"));
+	});
+
+	// reset the input text fields to ""
+	$("#reset_button").click(function() {
+		$("input[type='text']").val("");
+	});
+
+	// allow the cursor to automatically shift or not shift
+	$("#auto_cursor").click(function() {
+		if($(this).text() == "Auto Cursor: on")
+			$(this).text("Auto Cursor: off");
+		else
+			$(this).text("Auto Cursor: on");
 	});
 
 	$('.char_input').focus(function() {
@@ -35,7 +55,9 @@ $(document).ready(function() {
 				$("#character" + current_value).hide();
 			}
 
-			if($("#auto_move:checked").length && event.which != 9 && event.which != 16)
+			// if #auto_move text == on
+			// if($("#auto_move:checked").length && event.which != 9 && event.which != 16)
+			if($("#auto_cursor").text() == "Auto Cursor: on" && event.which != 9 && event.which != 16)
 				$(this).focusNextInputField();
 		});
 	});
@@ -43,12 +65,31 @@ $(document).ready(function() {
 	// jqueryminute.com
 	$.fn.focusNextInputField = function() {
 	    return this.each(function() {
-	        var fields = $(this).parents('form:eq(0),body').find('button,input,textarea,select');
+	        // var fields = $(this).parents('form:eq(0),body').find('button,input,textarea,select');
+	        var fields = $(this).parents('form:eq(0),body').find("input[type='text']");
 	        var index = fields.index( this );
-	        if ( index > -1 && ( index + 1 ) < fields.length ) {
-	            fields.eq( index + 1 ).focus();
+	        // if ( index > -1 && ( index + 1 ) < fields.length ) {
+	        //     fields.eq( index + 1 ).focus();
+	        // }
+	        if ( index > -1 && ( index+1  ) != fields.length ) {
+	            while(fields.eq(index).val() != "" && (index+1) != fields.length)
+	            {
+	            	fields.eq( index + 1 ).focus();
+	            	index++;
+	            }
+	        }
+	        else if( (index+1) == fields.length) {
+	        	fields.eq(0).focus();
 	        }
 	        return false;
 	    });
 	};
+
+	// remove auto cursor move for mobile devices.
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
+	{
+		// $("#auto_move").prop("checked", false);
+		$("#auto_cursor").text("Auto Cursor: off").hide();
+	}
+
 });

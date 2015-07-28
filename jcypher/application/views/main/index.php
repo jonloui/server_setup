@@ -5,7 +5,7 @@
 	<title>Jon's Cyphers</title>
 
 	<meta name="author" content="Jonathan Loui" />
-	<meta name="description" content="Jonathan Loui's Projects and Portfolio" />
+	<meta name="description" content="Jonathan Loui's Portfolio" />
 	<meta name="keywords" content="Jonathan, Loui, jcypher" />
 	
 	<?php $this->load->view('partials/main/common_css_files'); ?>
@@ -34,6 +34,9 @@
 		else {
 	?>
 		<section class="form_container">
+			<header>
+				<h2>Create Account</h2>
+			</header>
 			<?php
 				if($this->session->flashdata("account_error"))
 					echo "<p class='error'>" . $this->session->flashdata("account_error") . "</p>";
@@ -49,6 +52,9 @@
 			</form>
 		</section>
 		<section class="form_container">
+			<header>
+				<h2>Login</h2>
+			</header>
 			<?php
 				if($this->session->flashdata("login_error"))
 					echo "<p class='error'>" . $this->session->flashdata("login_error") . "</p>";

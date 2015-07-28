@@ -14,7 +14,10 @@
 
 		<?php
 			if(isset($login_status) && $login_status)
-				echo "<a href='/session/delete' id='log_link'>Logout</a>";
+			{
+				echo "<a href='/user/profile/{$id}' id='user_profile_link'>{$user_name}</a>
+					  <a href='/session/delete' id='log_link'>Logout</a>";
+			}
 			else
 				echo "<a href='/' id='log_link'>Login</a>";
 		?>

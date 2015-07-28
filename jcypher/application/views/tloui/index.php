@@ -19,14 +19,14 @@
 
 <body onload="setTitle();">
 <?php $this->load->view('partials/tloui/top'); ?>
-	<!------ Demo Reel ------>
+	<!-- Demo Reel -->
 			<div class="demo_reel">
 				<iframe width="660" height="486" 
 						src="/assets/media/tloui/Demo/Demo_March_18_2010_Final.swf">
 				</iframe>
 			</div>
 
-	<!------ Link to Save Demo Reel ------>
+	<!-- Link to Save Demo Reel -->
 			<div class="link">
 				<h3><a href="/assets/media/tloui/Demo/Demo_March_18_2010_Final.flv">Demo Reel (Right click to save)</a></h3>
 			</div>
@@ -35,4 +35,3 @@
 </div>
 </body>
 </html>
-

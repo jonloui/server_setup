@@ -32,7 +32,7 @@ Description: Basic Gallery of images of baby Leo's 1st Birthday
 			<div id="title">Happy 1st Birthday</div>
 			<div id="right_title" class="title"></div>
 		</header>
-		<section id="img_section">
+		<div id="img_section">
 			<div id="thumb_container"></div>
 			<div id="button_container">
 				<div id="up_button"></div>
@@ -42,7 +42,7 @@ Description: Basic Gallery of images of baby Leo's 1st Birthday
 				<button id='left_button'></button>
 				<button id='right_button'></button>
 			</div>
-		</section>
+		</div>
 	</div>
 </body>
 </html>

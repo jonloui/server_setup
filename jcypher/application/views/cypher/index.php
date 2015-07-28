@@ -24,7 +24,7 @@
 		<h1>Jon's Cyphers</h1>
 	</header>
 	<div id='welcome_text' class="silver_box">
-		Welcome to my cypher page where you can enter a cypher you wish to decrypt. <a target="_blank" href="jcyphers_api">API here</a>
+		Welcome to Jon's cypher page where you can enter a cypher you wish to decrypt. If you wish to make your own cypher page with the cyphers on this website, have fun making your own version of <a target="_blank" href="jcyphers_api">Jon's API</a>!
 	</div>
 	<?php
 		if(isset($login_status) && $login_status)
@@ -85,7 +85,7 @@
 							<td>" . $cypher_info['cypher'] . "</td>
 							<td>" . $cypher_info['hint'] . "</td>
 							<td><a href='/cyphers/show/" . $cypher_info['id'] . "'>Solve</a></td>
-							<td>" . $name . "</td>
+							<td><a href='/user/profile/{$cypher_info['user_id']}'>" . $name . "</a></td>
 							<td>" . $cypher_info['id'] . "</td>
 						  </tr>";
 				}

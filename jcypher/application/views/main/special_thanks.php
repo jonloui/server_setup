@@ -33,7 +33,7 @@
 		<a target="_blank" href="http://www.ubuntu.com/"><img src="/assets/images/main/special_thanks/ubuntu_logo.png" alt="Ubuntu logo" /></a>
 		<a target="_blank" href="http://nginx.org/"><img src="/assets/images/main/special_thanks/nginx_logo.png" alt="Nginx logo" /></a>
 		<a target="_blank" href="http://lesscss.org/"><img src="/assets/images/main/special_thanks/less_logo.png" alt="Less logo" /></a>
-		<a target="_blank" href=""><img src="/assets/images/main/special_thanks/jQueryUI_logo.png" alt="jQuery UI logo" /></a>
+		<a target="_blank" href="http://jqueryui.com/"><img src="/assets/images/main/special_thanks/jQueryUI_logo.png" alt="jQuery UI logo" /></a>
 		<!-- <a target="_blank" href=""><img src="/assets/images/main/special_thanks/ " alt=" logo" /></a> -->
 	</div>
 </body>
