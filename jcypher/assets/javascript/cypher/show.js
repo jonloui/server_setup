@@ -1,16 +1,15 @@
 $(document).ready(function() {
+	// show the hint to the user
 	$("#show_hint").hover(function() {
 		$(this).text() == "Show Hint" ? $(this).text("Are you sure?") : "";
 	},
 	function() {
 		$(this).text() == "Are you sure?" ? $(this).text("Show Hint") : "";
-	});
-
-	// show the hint to the user
-	$("#show_hint").click(function() {
+	}).click(function() {
 		$(this).text($(this).attr("alt"));
 	});
 
+	
 	// reset the input text fields to ""
 	$("#reset_button").click(function() {
 		$("input[type='text']").val("");
