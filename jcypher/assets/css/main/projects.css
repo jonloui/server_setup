@@ -20,6 +20,7 @@
 {
 	display: inline-block;
 	height: 250px;
+	margin: 0px;
 	overflow-y: scroll;
 	vertical-align: top;
 	width: 650px;

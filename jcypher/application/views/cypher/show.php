@@ -35,7 +35,8 @@
 			</div>
 		</div>
 		<div class="row">
-			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<div class="col-lg-3">
+				<!-- col-xs-3 col-sm-3 col-md-3  -->
 				<section id="cypher_menu">
 					<header>
 						<h2>Menu Options</h2>
@@ -53,7 +54,8 @@
 				</section>
 			</div>
 			
-			<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+			<div class="col-lg-7">
+				<!-- col-xs-7 col-sm-7 col-md-7  -->
 				<div id="character_container" class="silver_box">
 					<?php
 						for($i=65; $i < 91; $i++)
@@ -92,7 +94,7 @@
 								else
 									$temp_string_length = strlen(substr($cypher['cypher'], $i+1));
 								
-								if(($line_counter + $temp_string_length) > 25)
+								if(($line_counter + $temp_string_length) > 27)
 								{
 									echo "</div><div>";
 									$line_counter=0;

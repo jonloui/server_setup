@@ -24,7 +24,7 @@
 		<h1>Jon's Cyphers</h1>
 	</header>
 	<div id='welcome_text' class="silver_box">
-		Welcome to Jon's cypher page where you can enter a cypher you wish to decrypt. If you wish to make your own cypher page with the cyphers on this website, have fun making your own version of <a target="_blank" href="jcyphers_api">Jon's API</a>!
+		Welcome to Jon's cypher page where you can enter a cypher you wish to decrypt. If you wish to make your own cypher page with the cyphers on this website, have fun making your own version of <a target="_blank" href="jcyphers_api">Jon's Cypher</a>!
 	</div>
 	<?php
 		if(isset($login_status) && $login_status)
@@ -62,6 +62,10 @@
 
 	<?php } ?>
 
+	<!-- script from http://scrolltotop.com that creates a button to scroll to the top of the page -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script type="text/javascript" src="http://arrow.scrolltotop.com/arrow2.js"></script>
+
 	<table id="cypher_index_table">
 		<thead>
 			<tr>
@@ -84,7 +88,16 @@
 					echo "<tr>
 							<td>" . $cypher_info['cypher'] . "</td>
 							<td>" . $cypher_info['hint'] . "</td>
-							<td><a href='/cyphers/show/" . $cypher_info['id'] . "'>Solve</a></td>
+							<td>
+								<a href='/cyphers/show/" . $cypher_info['id'] . "'>Solve</a> ";
+								
+								for($i=0; $i < count($cyphers_by_current_user); $i++)
+								{
+									if($cypher_info['id'] == intval($cyphers_by_current_user[$i]['cypher_id']))
+										echo "<a href='/cyphers/edit/" . $cypher_info['id'] . "'>Edit</a>";
+								}
+
+					echo  "</td>
 							<td><a href='/user/profile/{$cypher_info['user_id']}'>" . $name . "</a></td>
 							<td>" . $cypher_info['id'] . "</td>
 						  </tr>";
