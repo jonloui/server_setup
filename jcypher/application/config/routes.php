@@ -29,4 +29,10 @@ $route['tloui_contactinfo'] = "tlouis/contactinfo";
 $route['user'] = "users/index";
 $route['user/create'] = "users/create";
 $route['user/profile/(:num)'] = "users/show/$1";
+
+$route['zesty'] = "zestys/index";
+$route['zesty/trialist'] = "zestys/trialist";
+$route['zesty/trialist/trial1'] = "zestys/trial1";
+$route['zesty/trialist/trial1b'] = "zestys/trial1b";
+$route['zesty/trainer'] = "zestys/trainer";
 //end of routes.php

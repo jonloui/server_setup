@@ -1,0 +1,73 @@
+@green: #bed730;
+
+#header
+{
+	background-color: black;
+	font-weight: bold;
+
+	div:nth-of-type(2)
+	{
+		color: white;
+	}
+}
+
+.row { margin-bottom: 20px; }
+
+.row:nth-of-type(2)
+{
+	div:first-of-type
+	{
+		background-color: gray;
+		color: white;
+	}
+}
+/* Map, Instructions, Items */
+.row:nth-of-type(4)
+{
+	color: @green;
+	padding: 5px;
+	text-align: center;
+
+	div
+	{
+		border: 1px solid #bed730;
+	}
+
+	div.selected_option
+	{
+		background-color: #bed730;
+		color: white;
+	}
+}
+
+.row:nth-of-type(5)
+{
+	div:first-of-type
+	{
+		font-weight: bold;
+	}
+
+	div:last-of-type
+	{
+		background-color: gray;
+		border-radius: 5px;
+		padding: 5px;
+		text-align: center;
+	}
+}
+
+/* Items */
+
+
+
+.row:last-of-type
+{
+	background-color: @green;
+	color: white;
+	font-weight: bold;
+	padding: 5px;
+	text-align: center;
+
+	a { color: white; }
+	a:hover { text-decoration: none;}
+}

@@ -1,0 +1,81 @@
+/*www.colorcombos.com*/
+@blue: #000066;
+@yellow: #FFCC00;
+
+header#title
+{
+	/*width: 300px;*/
+
+	a { color: @yellow; }
+}
+
+#cypher_menu
+{
+	height: 400px;
+	margin: 0px auto;
+	text-align: center;
+	vertical-align: top;
+	width: 200px;
+
+	header
+	{
+		color: @yellow;
+		text-shadow: 2px 2px silver, 2px 2px 5px @blue;
+	}
+
+	button, a button
+	{
+		background-color: @yellow;
+		color: black;
+		display: block;
+		margin: 5px auto;
+		padding: 0px 10px;
+		width: 180px;
+	}
+}
+
+#character_container
+{
+	background-color: @yellow;
+	margin: 20px auto;
+	padding: 10px;
+	width: 90%;
+
+	.chars
+	{
+		display: inline-block;
+		text-align: center;
+		width: 20px;
+	}
+}
+
+#show_cypher_container
+{
+	background-color: @yellow;
+	font-weight: bold;
+	margin: 10px auto;
+	padding: 10px;
+	
+	form
+	{
+		label { font-size: 12px; }
+
+		.letter, .space
+		{
+			display: inline-block;
+			margin-right: 5px;
+			text-align: center;
+			vertical-align: top;
+			width: 20px;
+
+			input { width: 20px; }
+		}
+
+		#options
+		{
+			margin-top: 10px;
+
+			#auto_move_label { width: 160px; }
+		}
+	}
+}

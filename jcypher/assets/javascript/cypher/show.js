@@ -89,6 +89,7 @@ $(document).ready(function() {
 	{
 		// $("#auto_move").prop("checked", false);
 		$("#auto_cursor").text("Auto Cursor: off").hide();
+		var testA = 20;
 	}
 
 });
