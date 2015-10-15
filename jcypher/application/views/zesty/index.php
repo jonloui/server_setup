@@ -23,22 +23,21 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12">
-				<header id="title">
-					<h1>Welcome to Zesty's Supplemental Training</h1>
-				</header>
+
+			<div id="zesty_title" class="col-xs-12 col-sm-12 h2">
+				Welcome to Zesty's Supplemental Training
 			</div>
 
-			<div id="instructions" class="col-xs-offset-5 col-sm-offset-5 col-xs-2 col-sm-2 silver_box">
+			<div id="instructions" class="col-xs-offset-3 col-sm-offset-3 col-xs-6 col-sm-6 silver_box">
 				Please select Trialist or Trainer.
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-xs-offset-5 col-sm-offset-5 col-xs-1 col-sm-1">
+			<div class="col-xs-offset-2 col-sm-offset-2 col-xs-2 col-sm-2">
 				<a href="/zesty/trialist"><button>Trialist</button></a>
 			</div>
-			<div class="col-xs-1 col-sm-1">
+			<div class="col-xs-offset-2 col-sm-offset-2 col-xs-2 col-sm-2">
 				<a href="/zesty/trainer"><button>Trainer</button></a>
 			</div>
 		<div>

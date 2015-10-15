@@ -24,38 +24,37 @@
 <body>
 	<div class="container-fluid">
 		<div id="header" class="row">
-			<div class="col-xs-2 col-sm-2">
-				< Tasks
+			<div class="col-xs-4 col-sm-4">
+				&#60; Tasks
 			</div>
 
-			<div class="col-xs-offset-3 col-sm-offset-3 col-xs-2 col-sm-2">
+			<div class="col-xs-4 col-sm-4">
 				Pickup
 			</div>
 
-			<div class="col-xs-offset-3 col-sm-offset-3 col-xs-2 col-sm-2">
+			<div class="col-xs-offset-1 col-sm-offset-1 col-xs-3 col-sm-3">
 				Contacts
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-xs-1 col-sm-1">
-				at 10:55 AM
+			<div class="col-xs-5 col-sm-5">
+				at 12:30 PM
 			</div>
-			<div class="col-xs-offset-9 col-sm-offset-9 col-xs-2 col-sm-2">
+			<div class="col-xs-offset-1 col-sm-offset-1 col-xs-6 col-sm-6">
 				Reference: ZMP001
 			</div>
 		</div>
 
 		<div class="row">
-			<div class="col-xs-12 col-sm-12">
-				<header class="h3">Zesty de la Menlo Park (Menlo Park)</header>
+			<div class="col-xs-12 col-sm-12 h4">
+				Zesty in Menlo Park (Menlo Park)
 			</div>
-			<div class="col-xs-12 col-sm-12">
+			<div class="col-xs-12 col-sm-12 h6">
 				111 Independence Drive, Menlo Park, CA, 94025
-			</div>		
+			</div>
 		</div>
 
-		<!-- row 4 -->
 		<div class="row">
 			<div class="col-xs-4 col-sm-4">
 				Map
@@ -69,6 +68,26 @@
 		</div>
 
 		<div class="row">
+			<div class="col-xs-8 col-sm-8">Zesty in Menlo Park</div>
+			<div class="col-xs-3 col-sm-3">Full Details</div>
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 h5">Special Instructions:</div>
+			<div class="col-xs-12 col-sm-12 h6">Setup from right to left. (Note: Most locations the setup will usually be from left to right, but some situations or specific client preferences will require something different)</div>
+			<div class="col-xs-12 col-sm-12">== Client Supplies Information ==</div>
+
+			<div class="col-xs-12 col-sm-12"> - Knives/forks/spoons provided by Zesty. </div>
+			<div class="col-xs-offset-1 col-sm-offset-1 col-xs-11 col-sm-11"> Find in box on site. </div>
+			<div class="col-xs-12 col-sm-12"> - Napkins provided by Zesty. </div>
+			<div class="col-xs-offset-1 col-sm-offset-1 col-xs-11 col-sm-11"> Find in box on site. </div>
+			<div class="col-xs-12 col-sm-12"> - Plates provided by Zesty. </div>
+			<div class="col-xs-offset-1 col-sm-offset-1 col-xs-11 col-sm-11"> Find in box on site. </div>
+			<div class="col-xs-12 col-sm-12"> - Utensils provided by Zesty. </div>
+			<div class="col-xs-offset-1 col-sm-offset-1 col-xs-11 col-sm-11"> Find in box on site. </div>
+		</div>
+
+		<div class="row footer">
 			<div class="col-xs-12 col-sm-12"><a href="/zesty/trialist">Setup Complete</a></div>
 		</div>
 	</div>

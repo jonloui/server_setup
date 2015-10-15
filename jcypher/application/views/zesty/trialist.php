@@ -23,10 +23,8 @@
 <body>
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12">
-				<header id="title">
-					<h1>Welcome to Zesty's Supplemental Training</h1>
-				</header>
+			<div id="zesty_title" class="col-xs-12 col-sm-12 h2">
+				Welcome to Zesty's Supplemental Training
 			</div>
 
 			<div id="trials_container" class="col-xs-12 col-sm-12 silver_box">

@@ -32,7 +32,8 @@ $route['user/profile/(:num)'] = "users/show/$1";
 
 $route['zesty'] = "zestys/index";
 $route['zesty/trialist'] = "zestys/trialist";
-$route['zesty/trialist/trial1'] = "zestys/trial1";
-$route['zesty/trialist/trial1b'] = "zestys/trial1b";
+$route['zesty/trialist/trial1'] = "zestys/trialist_trial1";
+$route['zesty/trialist/trialist_trial1b'] = "zestys/trialist_trial1b";
 $route['zesty/trainer'] = "zestys/trainer";
+$route['zesty/trainer/trainer_trial1'] = "zestys/trainer_trial1";
 //end of routes.php

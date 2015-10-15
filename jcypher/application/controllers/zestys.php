@@ -20,12 +20,12 @@ class Zestys extends Main {
 		$this->load->view('zesty/trialist');
 	}
 
-	public function trial1()
+	public function trialist_trial1()
 	{
 		$this->load->view('zesty/trialist/trial1');
 	}
 
-	public function trial1b()
+	public function trialist_trial1b()
 	{
 		$this->load->view('zesty/trialist/trial1b');
 	}
@@ -33,6 +33,11 @@ class Zestys extends Main {
 	public function trainer()
 	{
 		$this->load->view('zesty/trainer');
+	}
+
+	public function trainer_trial1()
+	{
+		$this->load->view('zesty/trainer/trial1');
 	}
 }
 
