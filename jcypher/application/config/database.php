@@ -12,10 +12,10 @@ if(ENVIRONMENT == 'production')
 }
 else
 {
-	$db['default']['hostname'] = 'localhost';
-	$db['default']['username'] = 'root';
-	$db['default']['password'] = ''; //Mythos15root
-	$db['default']['database'] = 'jcypher';
+	$db['default']['hostname'] = '';
+	$db['default']['username'] = '';
+	$db['default']['password'] = '';
+	$db['default']['database'] = '';
 }
 
 $db['default']['dbdriver'] = 'mysql';
