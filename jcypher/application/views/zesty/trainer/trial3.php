@@ -32,7 +32,10 @@
 			<div class="col-xs-12 col-sm-12">
 				<header class="h4">Instructions</header>
 				<ol>
-					<li>Make one lid loose when putting out the trays.</li>
+					<li>This will be their final driving trial.  Use the stopwatch on your phone and make sure they finish the pickup within 10 mins and also the setup within 10 mins.</li>
+					<li>Do not tell trialist unless they begin loading items.  The set purposely will be missing a tray for the buns and a tray for the salad.  Give them a tray for buns and a tray for the salad from the Trial 1 set.</li>
+					<li>The client will have a nut allergy, make sure the trialist asks you what to do with the side of nuts for the salad. Some clients have a severe allergy where they can't be in the same room, in this case leave nuts at the restaurant.  Other clients are ok with nuts as long as it's clearly labeled.</li>
+					<li>*** Please make sure to return these trays to the Trial 1 set when you finish. ***</li>
 				</ol>
 			</div>
 		</div>
@@ -41,9 +44,9 @@
 			<div id="pickup" class="col-xs-12 col-sm-12">
 				<header class="h4">Pickup</header>
 				<ol>
-					<li>Make sure they check off the items on the list before loading.</li>
-					<li>Make sure they check the lids and that they are sealed before loading to decrease the chance of spills occuring.</li>
-					<li>Heavy items like rice/quinoa should be loaded on the bottom so they don't crush lighter items.</li>
+					<li>Make sure they are able to calculate the correct safe number of bags.  Number of people divided by 25 plus 1 or 2 more bags.  You can advise them to bring also another 2 bags for emergency reasons.  i.e. Another CC at the restaurant </li>
+					<li>Make sure they ask for the missing tray of buns and salad after they go through the checklist.  Sometimes the restaurant staff will forget to transfer certain items.</li>
+					<li></li>
 				</ol>
 			</div>
 		</div>

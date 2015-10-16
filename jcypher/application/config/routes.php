@@ -34,6 +34,13 @@ $route['zesty'] = "zestys/index";
 $route['zesty/trialist'] = "zestys/trialist";
 $route['zesty/trialist/trial1'] = "zestys/trialist_trial1";
 $route['zesty/trialist/trialist_trial1b'] = "zestys/trialist_trial1b";
+$route['zesty/trialist/trial2'] = "zestys/trialist_trial2";
+$route['zesty/trialist/trialist_trial2b'] = "zestys/trialist_trial2b";
+$route['zesty/trialist/trial3'] = "zestys/trialist_trial3";
+$route['zesty/trialist/trialist_trial3b'] = "zestys/trialist_trial3b";
+
 $route['zesty/trainer'] = "zestys/trainer";
 $route['zesty/trainer/trainer_trial1'] = "zestys/trainer_trial1";
+$route['zesty/trainer/trainer_trial2'] = "zestys/trainer_trial2";
+$route['zesty/trainer/trainer_trial3'] = "zestys/trainer_trial3";
 //end of routes.php

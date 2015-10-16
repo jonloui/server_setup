@@ -106,7 +106,7 @@
 		</div>
 
 		<div class="row footer">
-			<div class="col-xs-12 col-sm-12"><a href="/zesty/trialist/trial1b">Pickup Complete</a></div>
+			<div class="col-xs-12 col-sm-12"><a href="/zesty/trialist/trialist_trial1b">Pickup Complete</a></div>
 		</div>
 	</div>
 </body>

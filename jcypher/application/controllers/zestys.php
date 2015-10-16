@@ -39,6 +39,16 @@ class Zestys extends Main {
 	{
 		$this->load->view('zesty/trainer/trial1');
 	}
+
+	public function trainer_trial2()
+	{
+		$this->load->view('zesty/trainer/trial2');
+	}
+
+	public function trainer_trial3()
+	{
+		$this->load->view('zesty/trainer/trial3');
+	}
 }
 
 //end of zesty controller

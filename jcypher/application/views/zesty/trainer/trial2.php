@@ -32,7 +32,7 @@
 			<div class="col-xs-12 col-sm-12">
 				<header class="h4">Instructions</header>
 				<ol>
-					<li>Make one lid loose when putting out the trays.</li>
+					<li>Put a new sticker on one of the trays.</li>
 				</ol>
 			</div>
 		</div>
@@ -41,9 +41,9 @@
 			<div id="pickup" class="col-xs-12 col-sm-12">
 				<header class="h4">Pickup</header>
 				<ol>
-					<li>Make sure they check off the items on the list before loading.</li>
-					<li>Make sure they check the lids and that they are sealed before loading to decrease the chance of spills occuring.</li>
-					<li>Heavy items like rice/quinoa should be loaded on the bottom so they don't crush lighter items.</li>
+					<li>Make sure they ask you if there are any nuts or if the food is gluten free.  The items will not include nuts and will be gluten free.</li>
+					<li>Sometimes the food won't be labeled.</li>
+					<li>************************ Need to determine which food not to label **************************</li>
 				</ol>
 			</div>
 		</div>
@@ -52,9 +52,9 @@
 			<div id="setup" class="col-xs-12 col-sm-12">
 				<header class="h4">Setup</header>
 				<ol>
-					<li>Make sure they check off 'setup complete' when they finish.</li>
-					<li>Make sure they use gloves to open lids</li>
-					<li>Make sure the food order layout is correct</li>
+					<li>This space is purposely set to be a small area to give them tips on ways to layout cards.</li>
+					<li>There will be no small metallic colored sauce spoons.  Let them know to contact support and that most often you can use the white plastic spoons instead.  This way support can let logistics know and they can restock the supply on site for the next CC setup.  CC can also tell the logistics team themselves when they return to HQ after their shift.</li>
+					<li>Sometimes the folder will be missing a card for an item.  Have them tell you what they would do to see in this particular situation.  Correct them if the proccess they explain sounds incorrect.</li>
 				</ol>
 			</div>
 		</div>

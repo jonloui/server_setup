@@ -31,8 +31,8 @@
 				<header class="h2">Trials</header>
 				<ul>
 					<li><a href="/zesty/trainer/trainer_trial1"><button>Trial 1</button></a></li>
-					<li><button>Trial 2</button></li>
-					<li><button>Trial 3</button></li>
+					<li><a href="/zesty/trainer/trainer_trial2"><button>Trial 2</button></a></li>
+					<li><a href="/zesty/trainer/trainer_trial3"><button>Trial 3</button></a></li>
 				</ul>
 			</div>
 		</div>
