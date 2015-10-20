@@ -32,7 +32,8 @@
 			<div class="col-xs-12 col-sm-12">
 				<header class="h4">Instructions</header>
 				<ol>
-					<li>Put a new sticker on one of the trays.</li>
+					<li>Put a new sticker on one of the trays.  Trialist will end up writing the food item on the sticker.</li>
+					<li>For setup hold back one of the cards and see what the trialist does</li>
 				</ol>
 			</div>
 		</div>
@@ -42,8 +43,7 @@
 				<header class="h4">Pickup</header>
 				<ol>
 					<li>Make sure they ask you if there are any nuts or if the food is gluten free.  The items will not include nuts and will be gluten free.</li>
-					<li>Sometimes the food won't be labeled.</li>
-					<li>************************ Need to determine which food not to label **************************</li>
+					<li>Sometimes the food won't be labeled. Make sure they ask what the food item is that has the sticker.  It will be the Beef Fajita Burritos.  They can just write beef or beef burritos.</li>
 				</ol>
 			</div>
 		</div>
@@ -53,8 +53,8 @@
 				<header class="h4">Setup</header>
 				<ol>
 					<li>This space is purposely set to be a small area to give them tips on ways to layout cards.</li>
-					<li>There will be no small metallic colored sauce spoons.  Let them know to contact support and that most often you can use the white plastic spoons instead.  This way support can let logistics know and they can restock the supply on site for the next CC setup.  CC can also tell the logistics team themselves when they return to HQ after their shift.</li>
-					<li>Sometimes the folder will be missing a card for an item.  Have them tell you what they would do to see in this particular situation.  Correct them if the proccess they explain sounds incorrect.</li>
+					<li>There will be no small metallic colored sauce spoons.  Let them know to contact support and that most often you can use the white plastic spoons instead.  This way support can let logistics know and they can restock the supply on site for the next CC setup.</li>
+					<li>Sometimes the folder will be missing a card for an item.  Have the trialist explain what they would do and then give them feedback or correct them on the proper procedure.  Correct them if the proccess they explain sounds incorrect.</li>
 				</ol>
 			</div>
 		</div>

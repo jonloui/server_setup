@@ -27,10 +27,10 @@
 		
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 h4">
-				Lotus Thai Bistro (Palo Alto)
+				Lulu's (Menlo Park)
 			</div>
 			<div class="col-xs-12 col-sm-12 h6">
-				425 California Ave., Palo Alto, CA, 94306
+				3539 Alameda de Las Pulgas
 			</div>		
 		</div>
 
@@ -47,16 +47,16 @@
 		</div>
 
 		<div class="row pickup_restaurant_details">
-			<div class="col-xs-8 col-sm-8">Lotus Thai Bistro</div>
+			<div class="col-xs-8 col-sm-8">Lulu's</div>
 			<div class="col-xs-3 col-sm-3">Full Details</div>
 		</div>
 
 		<div class="row items">
 			<div class="col-xs-12 col-sm-12">
-				5 x Beef, Sitr Fry
+				20 x Carnitas (Pork) Tacos
 			</div>
 			<div class="col-xs-10 col-sm-10 special_details">
-				Serve family style.
+				Serve family style: ***Gluten Free, Nut Allergy***
 			</div>
 			<div class="col-xs-2 col-sm-2">
 				<input type="checkbox" />
@@ -64,10 +64,10 @@
 		</div>
 		<div class="row items">
 			<div class="col-xs-12 col-sm-12">
-				9 x Chicken, Green Curry.
+				20 x Grilled Tilapia Tacos
 			</div>
 			<div class="col-xs-10 col-sm-10 special_details">
-				Serve family style.
+				Serve family style: ***Gluten Free, Nut Allergy***
 			</div>
 			<div class="col-xs-2 col-sm-2">
 				<input type="checkbox" />
@@ -75,10 +75,21 @@
 		</div>
 		<div class="row items">
 			<div class="col-xs-12 col-sm-12">
-				2 x Tofu, Broccoli Stir Fry
+				10 x Beef Fajita Burritos
 			</div>
 			<div class="col-xs-10 col-sm-10 special_details">
-				Serve family style.
+				Serve family style: ***Gluten Free, Nut Allergy***
+			</div>
+			<div class="col-xs-2 col-sm-2">
+				<input type="checkbox" />
+			</div>
+		</div>
+		<div class="row items">
+			<div class="col-xs-12 col-sm-12">
+				10 x Chicken Fajita Burritos
+			</div>
+			<div class="col-xs-10 col-sm-10 special_details">
+				Serve family style: ***Gluten Free, Nut Allergy***
 			</div>
 			<div class="col-xs-2 col-sm-2">
 				<input type="checkbox" />
@@ -86,10 +97,10 @@
 		</div>
 		<div class="row items">			
 			<div class="col-xs-12 col-sm-12">
-				1 x Rice, Brown
+				5 x Grilled Veggie Burrito
 			</div>
 			<div class="col-xs-10 col-sm-10 special_details">
-				Serve family style.
+				Serve family style: ***Gluten Free, Nut Allergy***
 			</div>
 			<div class="col-xs-2 col-sm-2">
 				<input type="checkbox" />
@@ -97,10 +108,10 @@
 		</div>
 		<div class="row items">
 			<div class="col-xs-12 col-sm-12">
-				1 x Salad (dressing on the side)
+				1 x Ensalada Mexicana (Lime Vinaigrette dressing on the side)
 			</div>
 			<div class="col-xs-10 col-sm-10 special_details">
-				Serve family style.
+				Serve family style: ***Gluten Free, Nut Allergy***
 			</div>
 			<div class="col-xs-2 col-sm-2">
 				<input type="checkbox" />
@@ -108,7 +119,7 @@
 		</div>
 
 		<div class="row footer">
-			<div class="col-xs-12 col-sm-12"><a href="/zesty/trialist/trialist_trial1b"><button>Pickup Complete</button></a></div>
+			<div class="col-xs-12 col-sm-12"><a href="/zesty/trialist/trialist_trial2b"><button>Pickup Complete</button></a></div>
 		</div>
 	</div>
 </body>

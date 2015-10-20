@@ -30,6 +30,26 @@ class Zestys extends Main {
 		$this->load->view('zesty/trialist/trial1b');
 	}
 
+	public function trialist_trial2()
+	{
+		$this->load->view('zesty/trialist/trial2');
+	}
+
+	public function trialist_trial2b()
+	{
+		$this->load->view('zesty/trialist/trial2b');
+	}
+
+	public function trialist_trial3()
+	{
+		$this->load->view('zesty/trialist/trial3');
+	}
+
+	public function trialist_trial3b()
+	{
+		$this->load->view('zesty/trialist/trial3b');
+	}
+
 	public function trainer()
 	{
 		$this->load->view('zesty/trainer');

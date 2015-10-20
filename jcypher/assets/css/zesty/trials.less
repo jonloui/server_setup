@@ -12,7 +12,12 @@
 	}
 }
 
-.row { margin-bottom: 20px; }
+.row
+{
+	margin-bottom: 20px;
+
+	.special_details { color: red; }
+}
 
 .row:nth-of-type(2)
 {
@@ -23,7 +28,7 @@
 	}
 }
 /* Map, Instructions, Items */
-.row:nth-of-type(4)
+.mii_menu
 {
 	color: @green;
 	padding: 5px;
@@ -41,7 +46,7 @@
 	}
 }
 
-.row:nth-of-type(5)
+.pickup_restaurant_details
 {
 	div:first-of-type
 	{
@@ -69,9 +74,21 @@
 	background-color: @green;
 	color: white;
 	font-weight: bold;
-	padding: 5px;
+	/*padding: 5px;*/
 	text-align: center;
 
 	a { color: white; }
 	a:hover { text-decoration: none;}
+
+	div
+	{
+		padding: 0px;
+
+		button
+		{
+			border: none;
+			height: 100%;
+			width: 100%;
+		}
+	}
 }

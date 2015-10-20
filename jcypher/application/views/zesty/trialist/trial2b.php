@@ -48,7 +48,7 @@
 
 		<div class="row">
 			<div class="col-xs-12 col-sm-12 h4">Special Instructions:</div>
-			<div class="col-xs-12 col-sm-12 h6">Setup from right to left. (Note: Most locations the setup will usually be from left to right, but some situations or specific client preferences will require something different)</div>
+			<div class="col-xs-12 col-sm-12 h6">Setup Vegan food to the side and have food clearly labeled for Vegans.</div>
 			<div class="col-xs-12 col-sm-12">== Client Supplies Information ==</div>
 
 			<div class="col-xs-12 col-sm-12"> - Knives/forks/spoons provided by Zesty. </div>
