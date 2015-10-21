@@ -32,10 +32,10 @@
 			<div class="col-xs-12 col-sm-12">
 				<header class="h4">Instructions</header>
 				<ol>
-					<li>This will be their final driving trial.  Use the stopwatch on your phone and make sure they finish the pickup within 10 mins and also the setup within 10 mins.</li>
+					<li>This will be their final driving trial.  Use the stopwatch on your phone and make sure they finish the pickup within 15 mins and also the setup within 15 mins.</li>
 					<li>Do not tell trialist unless they begin loading items.  The set purposely will be missing a tray for the buns and a tray for the salad.  Give them a tray for buns and a tray for the salad from the Trial 1 set.</li>
 					<li>The client will have a nut allergy, make sure the trialist asks you what to do with the side of nuts for the salad. Let them know they should contact support so they can advise what to do in this situation.  Some clients have a severe allergy where they can't be in the same room, in this case leave nuts at the restaurant.  Other clients are ok with nuts as long as it's clearly labeled.</li>
-					<li>*** Please make sure to return these trays to the Trial 1 set when you finish. ***</li>
+					<li>*** Please make sure to return the bun and salad trays to the Trial 1 set when you finish. ***</li>
 				</ol>
 			</div>
 		</div>
@@ -55,14 +55,14 @@
 			<div id="setup" class="col-xs-12 col-sm-12">
 				<header class="h4">Setup</header>
 				<ol>
-					<li></li>
+					<li>Sometimes the folder will be missing a card for an item.  Have the trialist explain what they would do and then give them feedback or correct them on the proper procedure.  Correct them if the proccess they explain sounds incorrect.</li>
 					<li></li>
 				</ol>
 			</div>
 		</div>
 
 		<div class="row footer">
-			<div class="col-xs-12 col-sm-12"><a href="/zesty/trainer">Training Complete</a></div>
+			<div class="col-xs-12 col-sm-12"><a href="/zesty/trainer"><button>Training Complete</button></a></div>
 		</div>
 	</div>
 </body>

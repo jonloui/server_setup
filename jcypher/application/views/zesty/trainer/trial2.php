@@ -54,13 +54,12 @@
 				<ol>
 					<li>This space is purposely set to be a small area to give them tips on ways to layout cards.</li>
 					<li>There will be no small metallic colored sauce spoons.  Let them know to contact support and that most often you can use the white plastic spoons instead.  This way support can let logistics know and they can restock the supply on site for the next CC setup.</li>
-					<li>Sometimes the folder will be missing a card for an item.  Have the trialist explain what they would do and then give them feedback or correct them on the proper procedure.  Correct them if the proccess they explain sounds incorrect.</li>
 				</ol>
 			</div>
 		</div>
 
 		<div class="row footer">
-			<div class="col-xs-12 col-sm-12"><a href="/zesty/trainer">Training Complete</a></div>
+			<div class="col-xs-12 col-sm-12"><a href="/zesty/trainer"><button>Training Complete</button></a></div>
 		</div>
 	</div>
 </body>

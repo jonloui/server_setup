@@ -60,7 +60,7 @@
 		</div>
 
 		<div class="row footer">
-			<div class="col-xs-12 col-sm-12"><a href="/zesty/trainer">Training Complete</a></div>
+			<div class="col-xs-12 col-sm-12"><a href="/zesty/trainer"><button>Training Complete</button></a></div>
 		</div>
 	</div>
 </body>
